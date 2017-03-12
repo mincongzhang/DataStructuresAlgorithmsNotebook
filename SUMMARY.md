@@ -14,4 +14,5 @@
   * [二叉搜索树的平衡与等价](二叉搜索树的平衡与等价.md)
   * [catalan](catalan.md)
 * [Hashing](hashing.md)
+  * [散列原理](hashing/散列原理.md)
 
