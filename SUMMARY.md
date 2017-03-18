@@ -12,7 +12,8 @@
   * [二叉搜索树定义和概念](二叉搜索树定义和概念.md)
   * [二叉搜索树实现](二叉搜索树实现.md)
   * [二叉搜索树的平衡与等价](二叉搜索树的平衡与等价.md)
-  * [catalans](catalan.md)
+  * [AVL树](avlshu.md)
+  * [catalan\(未完成\)](catalan.md)
 * [Hashing](hashing.md)
   * [散列原理](hashing/散列原理.md)
 
