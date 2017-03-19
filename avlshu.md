@@ -106,7 +106,7 @@ template <typename T> BinNodePosi(T) AVL<T>::insert(const T & e){
 
 ![](/assets/AVL_delete_zigzag.png)
 
-\( \*注意删除的结果, 假如T1,T2下面节点不存在,新子树高度-1, 整体高度-1, 造成失衡,这时候需要再往上调整一次, 最坏情况调整logn次\) 
+\( \*注意删除的结果,新子树高度-1, 整体高度-1, 造成失衡,这时候需要再往上调整一次, 最坏情况调整logn次\)
 
 12.删除:实现
 
