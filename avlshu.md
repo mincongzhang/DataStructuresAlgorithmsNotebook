@@ -100,6 +100,8 @@ template <typename T> BinNodePosi(T) AVL<T>::insert(const T & e){
 11.删除:双旋  
 \(1\)同时至多一个失衡节点g,首个可能就是x的父亲\_hot
 
+![](/assets/AVL_delete_zigzag.png)
+
 12.删除:实现
 
 ```
