@@ -60,6 +60,8 @@ template <typename T> class AVL: public BST<T>{
 8.插入:双旋\(zig & zag\)  
 \(1\)同时可有多个失衡节点,最低者g不低于x祖父\(也就是说, 从x失衡开始, 最多失衡到它祖父\)
 
+![](/assets/AVL_insert_zigzag.png)
+
 9.插入:实现
 
 ```
