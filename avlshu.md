@@ -55,7 +55,7 @@ template <typename T> class AVL: public BST<T>{
 
 ![](/assets/AVL_insert.png)
 
-\(子树高度不变\)
+\(\*注意插入后子树高度不变\)
 
 8.插入:双旋\(zig & zag\)  
 \(1\)同时可有多个失衡节点,最低者g不低于x祖父\(也就是说, 从x失衡开始, 最多失衡到它祖父\)
