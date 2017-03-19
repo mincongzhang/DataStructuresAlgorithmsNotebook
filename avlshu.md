@@ -143,6 +143,8 @@ template <typename T> bool AVL<T>::remove(const T & e){
 \(4\)按中序遍历次序,重命名为: T0 &lt; T1 &lt; T2 &lt; T3  
 \(5\)按中序遍历的次序: T0 a T1 b T2 c T3 直接拼接
 
+![](/assets/AVL_connect34.png)
+
 14.3+4重构:实现
 
 ```
