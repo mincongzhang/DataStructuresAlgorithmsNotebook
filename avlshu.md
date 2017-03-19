@@ -1,4 +1,4 @@
-### AVL树\(Adelson-Velskii and Landis' tree\)
+## AVL树\(Adelson-Velskii and Landis' tree\)
 
 1.AVL = BBST\(Balanced Binary Search Tree\)
 
@@ -15,11 +15,15 @@
 
 ![](/assets/AVL_fib.png)
 
+### 失衡和复衡
+
 5.失衡+复衡  
 \(1\)AVL树刚插入一个节点后失衡节点最多为O\(logn\) \(也就是最深叶子插入, 导致其上面所有父节点都失衡\)  
 \(2\)AVL树刚删除一个节点后失衡节点最多为O\(1\) \(因为高度是由最长的节点决定的\)
 
 ![](/assets/AVL_insert_remove.png)
+
+### 接口
 
 6.AVL:接口
 
@@ -41,6 +45,8 @@ template <typename T> class AVL: public BST<T>{
     bool remove(const T &);                //删除*重写*
 }
 ```
+
+### 插入
 
 7.插入:单旋\(zig/zag\)  
 \(1\)同时可有多个失衡节点,最低者g不低于x祖父\(也就是说, 从x失衡开始, 最多失衡到它祖父\)  
@@ -78,6 +84,8 @@ template <typename T> BinNodePosi(T) AVL<T>::insert(const T & e){
 }
 ```
 
+### 删除
+
 10.删除:单旋  
 \(1\)同时至多一个失衡节点g,首个可能就是x的父亲\_hot  
 \(2\)g经单旋调整后复衡,子树高度未必复原;更高祖先仍可能失衡  
@@ -111,6 +119,8 @@ template <typename T> bool AVL<T>::remove(const T & e){
     return true;
 }
 ```
+
+### 3+4重构
 
 13."3+4"重构算法  
 \(1\)设g\(x\)为最低的失衡节点,考察组孙三代:g,p,v  
