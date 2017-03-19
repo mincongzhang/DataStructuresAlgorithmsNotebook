@@ -162,7 +162,9 @@ BinNodePosi(T) BST<T>::connect34(
     c->rChild = T3; if(T3) T3->parent = c; updateHeight(c);
 
     b->lChild = a; a->parent = b;
-    b->rChild = c; c->parent = b; updateHeight(b);
+    b->rChild = c; c->parent = b; 
+    
+    updateHeight(b);
 
     return b;    //该子树新的根节点
 }
