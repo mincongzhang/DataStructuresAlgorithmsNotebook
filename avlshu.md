@@ -21,30 +21,7 @@
 
 ![](/assets/AVL_insert_remove.png)
 
-6.插入:单旋\(zig/zag\)  
-\(1\)同时可有多个失衡节点,最低者g不低于x祖父\(也就是说, 从x失衡开始, 最多失衡到它祖父\)  
-\(2\)g经单旋调整后恢复平衡,子树高度复原:更高祖先也必平衡,全树复衡
-(g=grandfather,f=father)
-
-7.插入:双旋\(zig & zag\)  
-\(1\)同时可有多个失衡节点,最低者g不低于x祖父
-
-8.删除:单旋  
-\(1\)同时至多一个失衡节点g,首个可能就是x的父亲\_hot  
-\(2\)g经单旋调整后复衡,子树高度未必复原;更高祖先仍可能失衡  
-\(3\)有失衡传播现象,可能需要做O\(logn\)次调整
-
-9.删除:双旋  
-\(1\)同时至多一个失衡节点g,首个可能就是x的父亲\_hot
-
-10."3+4"重构算法  
-\(1\)设g\(x\)为最低的失衡节点,考察组孙三代:g,p,v  
-\(2\)按中序遍历次序,将其重命名为 a&lt;b&lt;c  
-\(3\)他们总共拥有互不相交的四棵\(可能为空\)子树  
-\(4\)按中序遍历次序,重命名为: T0 &lt; T1 &lt; T2 &lt; T3  
-\(5\)按中序遍历的次序: T0 a T1 b T2 c T3 直接拼接
-
-10.AVL:接口
+6.AVL:接口
 
 ```
 //The only way a preprocessor directive can extend through more than one line is by preceding the newline character at the end of the line by a backslash (\).
@@ -65,33 +42,49 @@ template <typename T> class AVL: public BST<T>{
 }
 ```
 
-11.插入:实现
+7.插入:单旋\(zig/zag\)  
+\(1\)同时可有多个失衡节点,最低者g不低于x祖父\(也就是说, 从x失衡开始, 最多失衡到它祖父\)  
+\(2\)g经单旋调整后恢复平衡,子树高度复原:更高祖先也必平衡,全树复衡  
+\(g=grandfather,f=father\)
+
+8.插入:双旋\(zig & zag\)  
+\(1\)同时可有多个失衡节点,最低者g不低于x祖父\(也就是说, 从x失衡开始, 最多失衡到它祖父\)
+
+9.插入:实现
 
 ```
 /*AVL insert*/
 
 template <typename T> BinNodePosi(T) AVL<T>::insert(const T & e){
-    BinNodePosi(T) & x = search(e);
-    if(x) return x;
+  BinNodePosi(T) & x = search(e);
+  if(x) return x;
 
-    //new insert
-    x = new BinNode<T>(e,_hot);
-    _size++;
-    BinNodePosi(T) xx = x;
+  //new insert
+  x = new BinNode<T>(e,_hot);
+  _size++;
+  BinNodePosi(T) xx = x;
 
-    //从x的父亲出发逐层向上,依次检查各代祖先g
-    for( BinNodePosi(T) g = x->parent; g; g=g->parent){
-        if(!avlBalanced(*g)){
-            FromParentTo(*g) = rotateAt( tallerChild( tallerChild(g) ) );    //这啥?不懂啊
-            break;
-        } else {
-            updateHeight(g);
-        }
+  //从x的父亲出发逐层向上,依次检查各代祖先g
+  for( BinNodePosi(T) g = x->parent; g; g=g->parent){
+    if(!avlBalanced(*g)){
+      FromParentTo(*g) = rotateAt( tallerChild( tallerChild(g) ) ); //这啥?不懂啊
+      break;
+    } else {
+      updateHeight(g);
     }
+  }
 
-    return xx;
+  return xx;
 }
 ```
+
+10.删除:单旋  
+\(1\)同时至多一个失衡节点g,首个可能就是x的父亲\_hot  
+\(2\)g经单旋调整后复衡,子树高度未必复原;更高祖先仍可能失衡  
+\(3\)有失衡传播现象,可能需要做O\(logn\)次调整
+
+11.删除:双旋  
+\(1\)同时至多一个失衡节点g,首个可能就是x的父亲\_hot
 
 12.删除:实现
 
@@ -119,7 +112,14 @@ template <typename T> bool AVL<T>::remove(const T & e){
 }
 ```
 
-1. 3+4重构:实现
+13."3+4"重构算法  
+\(1\)设g\(x\)为最低的失衡节点,考察组孙三代:g,p,v  
+\(2\)按中序遍历次序,将其重命名为 a&lt;b&lt;c  
+\(3\)他们总共拥有互不相交的四棵\(可能为空\)子树  
+\(4\)按中序遍历次序,重命名为: T0 &lt; T1 &lt; T2 &lt; T3  
+\(5\)按中序遍历的次序: T0 a T1 b T2 c T3 直接拼接
+
+14.3+4重构:实现
 
 ```
 /*3+4 reconstruct*/
