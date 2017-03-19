@@ -79,7 +79,7 @@ template <typename T> BinNodePosi(T) AVL<T>::insert(const T & e){
   //从x的父亲出发逐层向上,依次检查各代祖先g
   for( BinNodePosi(T) g = x->parent; g; g=g->parent){
     if(!avlBalanced(*g)){
-      FromParentTo(*g) = rotateAt( tallerChild( tallerChild(g) ) ); //这啥?不懂啊
+      FromParentTo(*g) = rotateAt( tallerChild( tallerChild(g) ) ); //后面3+4重构有细节
       break;
     } else {
       updateHeight(g);
