@@ -97,6 +97,10 @@ template <typename T> BinNodePosi(T) AVL<T>::insert(const T & e){
 \(2\)g经单旋调整后复衡,子树高度未必复原;更高祖先仍可能失衡  
 \(3\)有失衡传播现象,可能需要做O\(logn\)次调整
 
+![](/assets/AVL_delete.png)
+
+\(\*注意删除的结果, 假如T2下面节点不存在,新子树高度-1, 整体高度-1, 造成失衡\)
+
 11.删除:双旋  
 \(1\)同时至多一个失衡节点g,首个可能就是x的父亲\_hot
 
