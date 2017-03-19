@@ -53,6 +53,10 @@ template <typename T> class AVL: public BST<T>{
 \(2\)g经单旋调整后恢复平衡,子树高度复原:更高祖先也必平衡,全树复衡  
 \(g=grandfather,f=father\)
 
+![](/assets/AVL_insert.png)
+
+\(子树高度不变\)
+
 8.插入:双旋\(zig & zag\)  
 \(1\)同时可有多个失衡节点,最低者g不低于x祖父\(也就是说, 从x失衡开始, 最多失衡到它祖父\)
 
