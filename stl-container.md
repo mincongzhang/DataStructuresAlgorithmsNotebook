@@ -2,12 +2,12 @@
 
 实现原理: 分段数组, 首地址存于索引数组\(index array\)
 
-优点:
-\(1\)随机访问\(call by rank\), 效率略逊于vector
-\(2\)deque两端, 高效插入,删除
+优点:  
+\(1\)随机访问\(call by rank\), 效率略逊于vector  
+\(2\)deque两端, 高效插入,删除  
 \(3\)内存分配优于vector, 不需要复制所有元素
 
-缺点:
+缺点:  
 \(1\)中间插入, 越往中间效率越低\(需要移动的元素越多\)
 
 ```
@@ -48,11 +48,17 @@ int main()
 
 list
 
+环形双向列表
+
 slist
+
+单向链表
 
 stack
 
 queue
 
 priority\_queue
+
+底层默认采用vector向量容器
 
