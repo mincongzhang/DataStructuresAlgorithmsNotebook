@@ -56,7 +56,11 @@ slist
 
 stack
 
+默认使用双端队列deque的数据结构，当然也可以采用其他线性表（如vector或list），只要提供堆栈的入栈、出栈、栈顶元素访问和判断是否为空的操作即可。
+
 queue
+
+默认使用双端队列deque的数据结构
 
 priority\_queue
 
