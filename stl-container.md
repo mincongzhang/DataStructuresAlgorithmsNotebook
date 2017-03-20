@@ -49,6 +49,7 @@ int main()
 ### list
 
 环形双向列表
+
 ```
 #include <iostream>
 #include <list>
@@ -85,9 +86,51 @@ int main(){
 }
 ```
 
-slist
+### forward\_list (C++11)
 
 单向链表
+
+```
+#include <iostream>
+#include <forward_list>
+
+int main(){
+  std::forward_list<int> int_list;
+  int_list.push_front(1);
+  int_list.push_front(1);
+  int_list.push_front(8);
+  int_list.push_front(9);
+  int_list.push_front(8);
+  int_list.push_front(2);
+  int_list.push_front(3);
+  int_list.push_front(3);
+  int_list.sort();
+
+  std::cout<<"iterate:"<<std::endl;
+  for(std::forward_list<int>::iterator list_iter = int_list.begin();
+      list_iter != int_list.end(); list_iter++) {
+    std::cout<<*list_iter<<std::endl;
+  }    
+
+  int_list.unique();
+
+  std::cout<<"sort, uniq and iterate:"<<std::endl;
+  for(std::forward_list<int>::iterator list_iter = int_list.begin();
+      list_iter != int_list.end(); list_iter++) {
+    std::cout<<*list_iter<<std::endl;
+  }
+
+  std::cout<<"front"<<std::endl;
+  std::cout<<int_list.front()<<std::endl;
+
+  std::cout<<"pop front"<<std::endl;
+  int_list.pop_front();
+  for(std::forward_list<int>::iterator list_iter = int_list.begin();
+      list_iter != int_list.end(); list_iter++) {
+    std::cout<<*list_iter<<std::endl;
+  }
+}
+```
 
 stack
 
