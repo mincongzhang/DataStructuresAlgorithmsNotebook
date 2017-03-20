@@ -132,7 +132,7 @@ int main(){
 }
 ```
 
-queue
+### queue
 
 默认使用双端队列deque的数据结构
 
