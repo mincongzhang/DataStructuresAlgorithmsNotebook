@@ -46,9 +46,44 @@ int main()
 }
 ```
 
-list
+### list
 
 环形双向列表
+```
+#include <iostream>
+#include <list>
+
+int main(){
+  std::list<int> int_list;
+  int_list.push_back(1);
+  int_list.push_back(1);
+  int_list.push_back(8);
+  int_list.push_back(9);
+  int_list.push_back(8);
+  int_list.push_back(2);
+  int_list.push_back(3);
+  int_list.push_back(3);
+  int_list.sort();
+  int_list.unique();
+
+  std::cout<<"sort, uniq and iterate:"<<std::endl;
+  for(std::list<int>::iterator list_iter = int_list.begin();
+      list_iter != int_list.end(); list_iter++) {
+    std::cout<<*list_iter<<std::endl;
+  }
+
+  std::cout<<"front and back"<<std::endl;
+  std::cout<<int_list.front()<<" "<<int_list.back()<<std::endl;
+
+  std::cout<<"pop front and back"<<std::endl;
+  int_list.pop_front();
+  int_list.pop_back();
+  for(std::list<int>::iterator list_iter = int_list.begin();
+      list_iter != int_list.end(); list_iter++) {
+    std::cout<<*list_iter<<std::endl;
+  }
+}
+```
 
 slist
 
