@@ -86,7 +86,7 @@ int main(){
 }
 ```
 
-### forward\_list (C++11)
+### forward\_list \(C++11\)
 
 单向链表
 
@@ -132,15 +132,37 @@ int main(){
 }
 ```
 
-stack
-
-默认使用双端队列deque的数据结构，当然也可以采用其他线性表（如vector或list），只要提供堆栈的入栈、出栈、栈顶元素访问和判断是否为空的操作即可。
-
 queue
 
 默认使用双端队列deque的数据结构
 
+```
+#include <iostream>
+#include <queue>
+
+int main(){
+  std::queue<int> int_q;
+  int_q.push(1);
+  int_q.push(5);
+  int_q.push(8);
+  int_q.push(9);
+
+  std::cout<<"queue front:"<<int_q.front()<<std::endl;
+  std::cout<<"queue back:"<<int_q.back()<<std::endl;
+
+  int_q.pop();
+  std::cout<<"queue front after pop:"<<int_q.front()<<std::endl;
+  std::cout<<"queue back after pop:"<<int_q.back()<<std::endl;
+}
+```
+
 priority\_queue
 
 底层默认采用vector向量容器
+
+stack
+
+默认使用双端队列deque的数据结构，当然也可以采用其他线性表（如vector或list），只要提供堆栈的入栈、出栈、栈顶元素访问和判断是否为空的操作即可。
+
+
 
