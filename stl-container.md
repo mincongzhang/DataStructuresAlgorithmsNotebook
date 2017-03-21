@@ -160,6 +160,40 @@ priority\_queue
 
 底层默认采用vector向量容器
 
+```
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <functional>//greater
+
+int main(){
+  std::priority_queue<int> q;
+  q.push(1);
+  q.push(5);
+  q.push(10);
+  q.push(8);
+  q.push(9);
+
+  std::cout<<"priority_queue top:"<<q.top()<<std::endl;
+  q.pop();
+  std::cout<<"priority_queue top after pop:"<<q.top()<<std::endl;
+
+  std::cout<<std::endl;
+
+  std::priority_queue<int,std::vector<int>,std::greater<int> > q2;
+  q2.push(1);
+  q2.push(5);
+  q2.push(10);
+  q2.push(8);
+  q2.push(9);
+
+  std::cout<<"priority_queue top:"<<q2.top()<<std::endl;
+  q2.pop();
+  std::cout<<"priority_queue top after pop:"<<q2.top()<<std::endl;
+
+}
+```
+
 stack
 
 默认使用双端队列deque的数据结构，当然也可以采用其他线性表（如vector或list），只要提供堆栈的入栈、出栈、栈顶元素访问和判断是否为空的操作即可。
