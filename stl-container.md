@@ -164,5 +164,21 @@ stack
 
 默认使用双端队列deque的数据结构，当然也可以采用其他线性表（如vector或list），只要提供堆栈的入栈、出栈、栈顶元素访问和判断是否为空的操作即可。
 
+```
+#include <iostream>
+#include <stack>
+
+int main(){
+  std::stack<int> int_stack;
+  int_stack.push(1);
+  int_stack.push(5);
+  int_stack.push(8);
+  int_stack.push(9);
+
+  std::cout<<"stack top:"<<int_stack.top()<<std::endl;
+  int_stack.pop();
+  std::cout<<"stack top:"<<int_stack.top()<<std::endl;
+}
+```
 
 
