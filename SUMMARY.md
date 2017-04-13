@@ -17,4 +17,5 @@
   * [catalan\(未完成\)](catalan.md)
 * [Hashing](hashing.md)
   * [散列原理](hashing/散列原理.md)
+* [MapReduce](mapreduce.md)
 
