@@ -2,13 +2,13 @@
 
 [https://www.joelonsoftware.com/2006/08/01/can-your-programming-language-do-this/](https://www.joelonsoftware.com/2006/08/01/can-your-programming-language-do-this/)
 
-
+### Example: 
 
 #### Map
 
-\(1\)For loop, each element +1. 
+\(1\)For loop, each element +1.
 
-\(2\)Sequence doesn't matter. 
+\(2\)Sequence doesn't matter.
 
 \(3\)Can be parallel calculated.
 
