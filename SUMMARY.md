@@ -33,5 +33,6 @@
   * [Find Minimum in Rotated Sorted Array](binary-search/find-minimum-in-rotated-sorted-array.md)
   * [Search in Rotated Sorted Array](binary-search/search-in-rotated-sorted-array.md)
   * [First Bad Version](binary-search/first-bad-version.md)
+  * [Sqrt](binary-search/sqrt.md)
 * [MapReduce](mapreduce.md)
 
