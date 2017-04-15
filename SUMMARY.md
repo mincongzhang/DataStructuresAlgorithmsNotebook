@@ -35,5 +35,6 @@
   * [First Bad Version](binary-search/first-bad-version.md)
   * [Sqrt](binary-search/sqrt.md)
   * [Fast Power](binary-search/fast-power.md)
+  * [Wood Cut](binary-search/wood-cut.md)
 * [MapReduce](mapreduce.md)
 
