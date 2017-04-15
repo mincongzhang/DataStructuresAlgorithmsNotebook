@@ -17,7 +17,7 @@
   * [catalan\(未完成\)](catalan.md)
 * [第三章:哈希](hashing.md)
   * [散列原理](hashing/散列原理.md)
-* [使用标准数据结构的算法](datastructure-related.md)
+* [使用标准数据结构的算法\(完成\)](datastructure-related.md)
   * [Min Stack](datastructure-related/min-stack.md)
   * [Implement Queue by Two Stacks](datastructure-related/implement-queue-by-two-stacks.md)
   * [Longest Consecutive Sequence](datastructure-related/longest-consecutive-sequence.md)
