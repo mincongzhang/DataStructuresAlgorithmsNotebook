@@ -23,4 +23,5 @@
   * [Implement Queue by Two Stacks](datastructure-related/implement-queue-by-two-stacks.md)
   * Longest Consecutive Sequence
   * [Data Stream Median](datastructure-related/data-stream-median.md)
+  * [Largest Rectangle in Histogram](datastructure-related/largest-rectangle-in-histogram.md)
 
