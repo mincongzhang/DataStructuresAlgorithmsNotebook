@@ -27,6 +27,7 @@
 * [MapReduce](mapreduce.md)
 * [二叉搜索算法](binary-search.md)
   * [First Position of Target](binary-search/first-position-of-target.md)
-  * [Find Peak element](binary-search/find-peak-element.md)
   * [Search Insert Position](binary-search/search-insert-position.md)
+  * [Find Peak element](binary-search/find-peak-element.md)
+  * [Search For a Range](binary-search/search-for-a-range.md)
 
