@@ -34,5 +34,6 @@
   * [Search in Rotated Sorted Array](binary-search/search-in-rotated-sorted-array.md)
   * [First Bad Version](binary-search/first-bad-version.md)
   * [Sqrt](binary-search/sqrt.md)
+  * [Fast Power](binary-search/fast-power.md)
 * [MapReduce](mapreduce.md)
 
