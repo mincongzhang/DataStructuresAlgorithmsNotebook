@@ -17,7 +17,6 @@
   * [catalan\(未完成\)](catalan.md)
 * [第三章:哈希](hashing.md)
   * [散列原理](hashing/散列原理.md)
-* [MapReduce](mapreduce.md)
 * [使用标准数据结构的算法](datastructure-related.md)
   * [Min Stack](datastructure-related/min-stack.md)
   * [Implement Queue by Two Stacks](datastructure-related/implement-queue-by-two-stacks.md)
@@ -25,4 +24,5 @@
   * [Data Stream Median](datastructure-related/data-stream-median.md)
   * [Largest Rectangle in Histogram](datastructure-related/largest-rectangle-in-histogram.md)
   * [Merge k Sorted Lists](datastructure-related/merge-k-sorted-lists.md)
+* [MapReduce](mapreduce.md)
 
