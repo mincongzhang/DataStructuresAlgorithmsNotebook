@@ -2,10 +2,9 @@
 
 Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
 
-Given \[100, 4, 200, 1, 3, 2\],  
-The longest consecutive elements sequence is \[1, 2, 3, 4\]. Return its length: 4.
+Given \[100, 4, 200, 1, 3, 2\], the longest consecutive elements sequence is \[1, 2, 3, 4\]. Return its length: 4.
 
-http://www.lintcode.com/en/problem/longest-consecutive-sequence/
+[http://www.lintcode.com/en/problem/longest-consecutive-sequence/](http://www.lintcode.com/en/problem/longest-consecutive-sequence/)
 
 ```
 //O(nlogn) solution (std::set)
