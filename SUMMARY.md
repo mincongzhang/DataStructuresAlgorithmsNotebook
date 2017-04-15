@@ -18,7 +18,8 @@
 * [第三章:哈希](hashing.md)
   * [散列原理](hashing/散列原理.md)
 * [MapReduce](mapreduce.md)
-* [使用标准库数据结构的算法](datastructure-related.md)
+* [使用标准数据结构的算法](datastructure-related.md)
   * [Min Stack](datastructure-related/min-stack.md)
   * [Implement Queue by Two Stacks](datastructure-related/implement-queue-by-two-stacks.md)
+  * Longest Consecutive Sequence
 
