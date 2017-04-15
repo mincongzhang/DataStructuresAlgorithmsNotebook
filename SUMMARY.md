@@ -20,4 +20,5 @@
 * [MapReduce](mapreduce.md)
 * [使用标准库数据结构的算法](datastructure-related.md)
   * [Min Stack](datastructure-related/min-stack.md)
+  * [Implement Queue by Two Stacks](datastructure-related/implement-queue-by-two-stacks.md)
 
