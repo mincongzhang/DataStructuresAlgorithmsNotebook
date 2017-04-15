@@ -24,7 +24,7 @@
   * [Data Stream Median](datastructure-related/data-stream-median.md)
   * [Largest Rectangle in Histogram](datastructure-related/largest-rectangle-in-histogram.md)
   * [Merge k Sorted Lists](datastructure-related/merge-k-sorted-lists.md)
-* [二叉搜索算法](binary-search.md)
+* [二叉搜索算法\(完成\)](binary-search.md)
   * [First Position of Target](binary-search/first-position-of-target.md)
   * [Search Insert Position](binary-search/search-insert-position.md)
   * [Find Peak element](binary-search/find-peak-element.md)
