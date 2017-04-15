@@ -24,4 +24,5 @@
   * Longest Consecutive Sequence
   * [Data Stream Median](datastructure-related/data-stream-median.md)
   * [Largest Rectangle in Histogram](datastructure-related/largest-rectangle-in-histogram.md)
+  * [Merge k Sorted Lists](datastructure-related/merge-k-sorted-lists.md)
 
