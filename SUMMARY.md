@@ -30,4 +30,5 @@
   * [Search Insert Position](binary-search/search-insert-position.md)
   * [Find Peak element](binary-search/find-peak-element.md)
   * [Search For a Range](binary-search/search-for-a-range.md)
+  * [Search a 2D Matrix](binary-search/search-a-2d-matrix.md)
 
