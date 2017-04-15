@@ -22,4 +22,5 @@
   * [Min Stack](datastructure-related/min-stack.md)
   * [Implement Queue by Two Stacks](datastructure-related/implement-queue-by-two-stacks.md)
   * Longest Consecutive Sequence
+  * [Data Stream Median](datastructure-related/data-stream-median.md)
 
