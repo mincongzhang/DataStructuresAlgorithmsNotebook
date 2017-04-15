@@ -31,4 +31,5 @@
   * [Find Peak element](binary-search/find-peak-element.md)
   * [Search For a Range](binary-search/search-for-a-range.md)
   * [Search a 2D Matrix](binary-search/search-a-2d-matrix.md)
+  * [Find Minimum in Rotated Sorted Array](binary-search/find-minimum-in-rotated-sorted-array.md)
 
