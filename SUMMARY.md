@@ -36,5 +36,6 @@
   * [Sqrt](binary-search/sqrt.md)
   * [Fast Power](binary-search/fast-power.md)
   * [Wood Cut](binary-search/wood-cut.md)
+* [Greedy Algorithm](greedy-algorithm.md)
 * [MapReduce](mapreduce.md)
 
