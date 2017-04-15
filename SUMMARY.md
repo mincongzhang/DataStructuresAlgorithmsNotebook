@@ -33,4 +33,5 @@
   * [Search a 2D Matrix](binary-search/search-a-2d-matrix.md)
   * [Find Minimum in Rotated Sorted Array](binary-search/find-minimum-in-rotated-sorted-array.md)
   * [Search in Rotated Sorted Array](binary-search/search-in-rotated-sorted-array.md)
+  * [First Bad Version](binary-search/first-bad-version.md)
 
