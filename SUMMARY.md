@@ -20,7 +20,7 @@
 * [使用标准数据结构的算法](datastructure-related.md)
   * [Min Stack](datastructure-related/min-stack.md)
   * [Implement Queue by Two Stacks](datastructure-related/implement-queue-by-two-stacks.md)
-  * Longest Consecutive Sequence
+  * [Longest Consecutive Sequence](datastructure-related/longest-consecutive-sequence.md)
   * [Data Stream Median](datastructure-related/data-stream-median.md)
   * [Largest Rectangle in Histogram](datastructure-related/largest-rectangle-in-histogram.md)
   * [Merge k Sorted Lists](datastructure-related/merge-k-sorted-lists.md)
