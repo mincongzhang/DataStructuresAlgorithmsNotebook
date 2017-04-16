@@ -37,5 +37,6 @@
   * [Fast Power](binary-search/fast-power.md)
   * [Wood Cut](binary-search/wood-cut.md)
 * [贪心算法](greedy-algorithm.md)
+  * [Single Number](greedy-algorithm/single-number.md)
 * [MapReduce](mapreduce.md)
 
