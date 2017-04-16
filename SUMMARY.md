@@ -38,5 +38,6 @@
   * [Wood Cut](binary-search/wood-cut.md)
 * [贪心算法](greedy-algorithm.md)
   * [Single Number](greedy-algorithm/single-number.md)
+  * [Majority Number](greedy-algorithm/majority-number.md)
 * [MapReduce](mapreduce.md)
 
