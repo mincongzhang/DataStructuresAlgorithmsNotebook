@@ -39,5 +39,7 @@
 * [贪心算法](greedy-algorithm.md)
   * [Single Number](greedy-algorithm/single-number.md)
   * [Majority Number](greedy-algorithm/majority-number.md)
+  * [Jump Game](greedy-algorithm/jump-game.md)
+  * [Jump Game II](greedy-algorithm/jump-game-ii.md)
 * [MapReduce](mapreduce.md)
 
