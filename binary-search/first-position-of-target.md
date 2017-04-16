@@ -1,8 +1,8 @@
-
 ### First Position of Target
-For a given sorted array (ascending order) and a target number, find the first index of this number in O(log n) time complexity.
-If the target number does not exist in the array, return -1.
-http://www.lintcode.com/en/problem/first-position-of-target/
+
+For a given sorted array \(ascending order\) and a target number, find the first index of this number in O\(log n\) time complexity.  
+If the target number does not exist in the array, return -1.  
+[http://www.lintcode.com/en/problem/first-position-of-target/](http://www.lintcode.com/en/problem/first-position-of-target/)
 
 ```
 class Solution {
@@ -15,12 +15,12 @@ private:
     if(start == end ){
       if(array[half] == target)
         m_pos = half;
-      
+
       return;
     }
 
     if(array[half] >= target){
-      search(array,target,0,half);
+      search(array,target,start,half);
     } else {
       search(array,target,half+1,end);
     }
@@ -35,5 +35,7 @@ public:
     return m_pos;
   }
 };
-
 ```
+
+
+
