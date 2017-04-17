@@ -46,6 +46,7 @@
 * [算法:3Sum问题](3sumwen-ti.md)
   * [2Sum](3sumwen-ti/2sum.md)
   * [3Sum](3sumwen-ti/3sum.md)
+  * [3Sum Closest](3sumwen-ti/3sum-closest.md)
 * [其他算法](qi-ta-suan-fa.md)
   * [MapReduce](qi-ta-suan-fa/mapreduce.md)
 
