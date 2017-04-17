@@ -18,7 +18,7 @@
 * [第三章:哈希](hashing.md)
   * [散列原理](hashing/散列原理.md)
   * [散列函数](hashing/hashing-function.md)
-  * [散列:排解冲突](hashing/san-52173a-pai-jie-chong-tu.md)
+  * [排解冲突](hashing/san-52173a-pai-jie-chong-tu.md)
 * [算法:使用标准数据结构的算法\(完成\)](datastructure-related.md)
   * [Min Stack](datastructure-related/min-stack.md)
   * [Implement Queue by Two Stacks](datastructure-related/implement-queue-by-two-stacks.md)
