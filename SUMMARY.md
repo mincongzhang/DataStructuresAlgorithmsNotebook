@@ -15,7 +15,7 @@
   * [二叉搜索树的平衡与等价](二叉搜索树的平衡与等价.md)
   * [AVL树](avlshu.md)
   * [catalan\(未完成\)](catalan.md)
-* [第三章:哈希](hashing.md)
+* [第三章:哈希\(完成\)](hashing.md)
   * [散列原理](hashing/散列原理.md)
   * [散列函数](hashing/hashing-function.md)
   * [排解冲突](hashing/san-52173a-pai-jie-chong-tu.md)
