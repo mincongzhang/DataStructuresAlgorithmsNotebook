@@ -1,13 +1,13 @@
 ### 3 Sum
 
 Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.  
-_Elements in a triplet \(a,b,c\) must be in non-descending order. \(ie, a ≤ b ≤ c\)  
-_The solution set must not contain duplicate triplets.  
+\_Elements in a triplet \(a,b,c\) must be in non-descending order. \(ie, a ≤ b ≤ c\)  
+\_The solution set must not contain duplicate triplets.  
 [http://www.lintcode.com/en/problem/3sum/](http://www.lintcode.com/en/problem/3sum/)
 
 ```
-//Sorting: O(n^2 * logn) solution
-//TODO: Hashing can be O(n^2)
+//Sorting: O(n^2) solution
+//TODO: Hashing can also be O(n^2)
 
 #include <algorithm>
 #include <iostream>
