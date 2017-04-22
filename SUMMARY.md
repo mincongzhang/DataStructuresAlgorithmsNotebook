@@ -57,4 +57,5 @@
   * [MapReduce](qi-ta-suan-fa/mapreduce.md)
 * [算法: Two Pointers](suan-6cd53a-two-pointers.md)
   * [Move Zeroes](suan-6cd53a-two-pointers/move-zeroes.md)
+  * [Reverse String](suan-6cd53a-two-pointers/reverse-string.md)
 
