@@ -36,5 +36,28 @@ public:
 };
 ```
 
-
+```
+class Solution {
+private:
+    void swap(int & a, int & b){
+        int tmp = a;
+        a = b;
+        b = tmp;
+    }
+    
+public:
+    void moveZeroes(vector<int>& nums) {
+        if(nums.empty()) return;
+        
+        int non_zero_it = 0;
+        for(int it=0; it<nums.size(); ++it){
+            if(nums[it]!=0){
+                swap(nums[non_zero_it],nums[it]);
+                non_zero_it++;
+            }
+        }
+        
+    }
+};
+```
 
