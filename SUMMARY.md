@@ -60,4 +60,5 @@
   * [Reverse String](suan-6cd53a-two-pointers/reverse-string.md)
   * [Container With Most Water](suan-6cd53a-two-pointers/container-with-most-water.md)
   * [Remove Element](suan-6cd53a-two-pointers/remove-element.md)
+  * [Remove Duplicates from Sorted Array](suan-6cd53a-two-pointers/remove-duplicates-from-sorted-array.md)
 
