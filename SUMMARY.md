@@ -49,9 +49,11 @@
   * [2Sum](3sumwen-ti/2sum.md)
   * [3Sum](3sumwen-ti/3sum.md)
   * [3Sum Closest](3sumwen-ti/3sum-closest.md)
-* 算法:链表相关算法
+* [算法:链表相关算法](suan-6cd53a-lian-biao-xiang-guan-suan-fa.md)
   * [Remove Nth Node From End of List](remove-nth-node-from-end-of-list.md)
   * [Add Two Numbers II](add-two-numbers-ii.md)
 * [其他算法](qi-ta-suan-fa.md)
   * [MapReduce](qi-ta-suan-fa/mapreduce.md)
+* [算法: Two Pointers](suan-6cd53a-two-pointers.md)
+  * [Move Zeroes](suan-6cd53a-two-pointers/move-zeroes.md)
 
