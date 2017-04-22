@@ -59,4 +59,5 @@
   * [Move Zeroes](suan-6cd53a-two-pointers/move-zeroes.md)
   * [Reverse String](suan-6cd53a-two-pointers/reverse-string.md)
   * [Container With Most Water](suan-6cd53a-two-pointers/container-with-most-water.md)
+  * [Remove Element](suan-6cd53a-two-pointers/remove-element.md)
 
