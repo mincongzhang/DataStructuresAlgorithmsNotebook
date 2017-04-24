@@ -74,4 +74,6 @@
   * [Remove Duplicates from Sorted Array](suan-6cd53a-two-pointers/remove-duplicates-from-sorted-array.md)
 * [其他算法](qi-ta-suan-fa.md)
   * [MapReduce](qi-ta-suan-fa/mapreduce.md)
+* [算法:数组相关算法](suan-6cd53a-shu-zu-xiang-guan-suan-fa.md)
+  * [Subarray Sum](suan-6cd53a-shu-zu-xiang-guan-suan-fa/subarray-sum.md)
 
