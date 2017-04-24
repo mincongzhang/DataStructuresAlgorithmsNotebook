@@ -61,6 +61,7 @@
   * [Rotate List](rotate-list.md)
   * [Reorder List](reorder-list.md)
   * [Convert Sorted List to Balanced BST](convert-sorted-list-to-balanced-bst.md)
+  * [Copy List with Random Pointer](copy-list-with-random-pointer.md)
 * [其他算法](qi-ta-suan-fa.md)
   * [MapReduce](qi-ta-suan-fa/mapreduce.md)
 * [算法: Two Pointers](suan-6cd53a-two-pointers.md)
