@@ -57,6 +57,7 @@
   * [Add Two Numbers II](add-two-numbers-ii.md)
   * [Remove Duplicates from Sorted List](remove-duplicates-from-sorted-list.md)
   * [Reverse Linked List](reverse-linked-list.md)
+  * [Linked List Cycle](linked-list-cycle.md)
 * [其他算法](qi-ta-suan-fa.md)
   * [MapReduce](qi-ta-suan-fa/mapreduce.md)
 * [算法: Two Pointers](suan-6cd53a-two-pointers.md)
