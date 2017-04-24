@@ -1,7 +1,10 @@
 ### Unique Paths II
+
 Follow up for "Unique Paths":  
 Now consider if some obstacles are added to the grids. How many unique paths would there be?  
-An obstacle and empty space is marked as 1 and 0 respectively in the grid.  
+An obstacle and empty space is marked as 1 and 0 respectively in the grid.
+
+http://www.lintcode.com/en/problem/unique-paths-ii/
 
 ```
 class Solution {
@@ -45,4 +48,6 @@ public:
   }
 };
 ```
+
+
 
