@@ -55,6 +55,7 @@
 * [算法:链表相关算法](suan-6cd53a-lian-biao-xiang-guan-suan-fa.md)
   * [Remove Nth Node From End of List](remove-nth-node-from-end-of-list.md)
   * [Add Two Numbers II](add-two-numbers-ii.md)
+  * [Remove Duplicates from Sorted List](remove-duplicates-from-sorted-list.md)
 * [其他算法](qi-ta-suan-fa.md)
   * [MapReduce](qi-ta-suan-fa/mapreduce.md)
 * [算法: Two Pointers](suan-6cd53a-two-pointers.md)
