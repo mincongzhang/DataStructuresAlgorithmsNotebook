@@ -83,4 +83,5 @@
 * [算法:动态规划](suan-6cd53a-dong-tai-gui-hua.md)
   * [Fibonacci](suan-6cd53a-dong-tai-gui-hua/fibonacci.md)
   * Pascal
+  * [Climbing Stairs](suan-6cd53a-dong-tai-gui-hua/climbing-stairs.md)
 
