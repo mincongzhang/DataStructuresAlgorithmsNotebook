@@ -107,5 +107,42 @@ public:
 };
 ```
 
+```
+//2 Pointers solution but can't preserve the order
 
+class Solution {
+
+private:
+    void swap(ListNode * l1, ListNode * l2){
+        if(!l1 || !l2){
+            return;
+        }
+        
+        int val = l1->val;
+        l1->val = l2->val;
+        l2->val = val;
+    }
+
+public:
+    /**
+     * @param head: The first node of linked list.
+     * @param x: an integer
+     * @return: a ListNode 
+     */
+    ListNode *partition(ListNode *head, int x) {
+        ListNode * noless = head;
+        ListNode * it = head;
+        while(it){
+            if(noless && it->val < x){
+                swap(noless,it);
+                noless = noless->next;
+            }
+            
+            it = it->next;
+        }
+        
+        return head;
+    }
+};
+```
 
