@@ -48,6 +48,7 @@
   * [Gas Station](greedy-algorithm/gas-station.md)
   * [Best Time to Buy and Sell Stock](greedy-algorithm/best-time-to-buy-and-sell-stock.md)
   * [Missing Number](greedy-algorithm/missing-number.md)
+  * [Maximum Subarray](greedy-algorithm/maximum-subarray.md)
 * [算法:3Sum问题\(完成\)](3sumwen-ti.md)
   * [2Sum](3sumwen-ti/2sum.md)
   * [3Sum](3sumwen-ti/3sum.md)
