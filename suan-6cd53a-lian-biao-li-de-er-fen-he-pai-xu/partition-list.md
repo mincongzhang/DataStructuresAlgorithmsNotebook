@@ -1,8 +1,9 @@
-###  Partition List
-Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x.
+### Partition List
+
+Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x.  
 You should preserve the original relative order of the nodes in each of the two partitions.
 
-http://www.lintcode.com/en/problem/partition-list/#
+[http://www.lintcode.com/en/problem/partition-list/\#](http://www.lintcode.com/en/problem/partition-list/#)
 
 ```
 /**
@@ -28,13 +29,13 @@ public:
         //Idea:
         //create 2 lists with less/greater, appending
         //In the end conect 2 lists
-        
+
         ListNode * less_x = new ListNode(INT_MIN);
         ListNode * greater_equal_x = new ListNode(INT_MIN);
-        
+
         ListNode * less_x_it = less_x;
         ListNode * greater_equal_x_it = greater_equal_x;
-        
+
         while(head){
             if(head->val < x){
                 less_x_it->next = head;
@@ -50,7 +51,7 @@ public:
 
         less_x_it->next = greater_equal_x->next;
         greater_equal_x_it->next = NULL; //NOTE: be careful
-        
+
         ListNode * ret_list = less_x->next;
         delete less_x;
         delete greater_equal_x;
@@ -105,3 +106,6 @@ public:
   }
 };
 ```
+
+
+
