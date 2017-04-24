@@ -1,16 +1,16 @@
-
-
 ### Unique Binary Search Trees
-Given n, how many structurally unique BSTs (binary search trees) that store values 1...n?
-http://www.lintcode.com/en/problem/unique-binary-search-trees/
 
-reference:http://fisherlei.blogspot.co.uk/2013/03/leetcode-unique-binary-search-trees.html
+Given n, how many structurally unique BSTs \(binary search trees\) that store values 1...n?  
+[http://www.lintcode.com/en/problem/unique-binary-search-trees/](http://www.lintcode.com/en/problem/unique-binary-search-trees/)
+
+reference:[http://fisherlei.blogspot.co.uk/2013/03/leetcode-unique-binary-search-trees.html](http://fisherlei.blogspot.co.uk/2013/03/leetcode-unique-binary-search-trees.html)
+
 ```
 这题想了好久才想清楚。其实如果把上例的顺序改一下，就可以看出规律了。
  1                1                      2                       3             3
-    \                 \                 /      \                  /              / 
-      3               2              1       3               2             1
-    /                   \                                       /                  \
+   \                 \                /      \                  /              / 
+      3               2              1       3                 2              1
+    /                   \                                     /                 \
  2                       3                                   1                    2
 
 比如，以1为根的树有几个，完全取决于有二个元素的子树有几种。同理，2为根的子树取决于一个元素的子树有几个。以3为根的情况，则与1相同。
@@ -49,18 +49,21 @@ public:
      */
     int numTrees(int n) {
         if(n<=1) return 1;
-        
+
         std::vector<int> count(n+1,0);
         count[0] = 1;
         count[1] = 1;
-        
+
         for(int i(2); i<count.size(); ++i){
             for(int j(0); j<i; ++j){
                 count[i] += count[j]*count[i-j-1];
             }
         }
-        
+
         return count.back();
     }
 };
 ```
+
+
+
