@@ -80,4 +80,5 @@
 * [算法:前后向遍历](suan-6cd53a-qian-hou-xiang-bian-li.md)
 * [算法:动态规划](suan-6cd53a-dong-tai-gui-hua.md)
   * [Fibonacci](suan-6cd53a-dong-tai-gui-hua/fibonacci.md)
+  * Pascal
 

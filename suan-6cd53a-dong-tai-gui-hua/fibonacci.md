@@ -9,7 +9,7 @@
 
 int fib(int n){
     if(n==1 || n==2) return 1;
-    
+
     return fib(n-1)+fib(n-2);
 }
 
@@ -22,7 +22,7 @@ int fib2(int n){
         cur = next;
         next = prev+cur;
     }
-    
+
     return cur;
 }
 
@@ -30,7 +30,7 @@ int fibHash(int n, std::unordered_map<int,int> & hash){
     if(n==1 || n==2) return 1;
 
     int result;
-    
+
     std::unordered_map<int,int>::const_iterator it = hash.find(n);
     if(it != hash.end()){
         result = it->second;    
@@ -53,3 +53,6 @@ int main(){
     return 0;
 }
 ```
+
+
+
