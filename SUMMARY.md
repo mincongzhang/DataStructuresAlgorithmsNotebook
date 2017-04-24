@@ -76,4 +76,5 @@
   * [MapReduce](qi-ta-suan-fa/mapreduce.md)
 * [算法:数组相关算法](suan-6cd53a-shu-zu-xiang-guan-suan-fa.md)
   * [Subarray Sum](suan-6cd53a-shu-zu-xiang-guan-suan-fa/subarray-sum.md)
+  * [Product of Array Exclude Itself](suan-6cd53a-shu-zu-xiang-guan-suan-fa/product-of-array-exclude-itself.md)
 
