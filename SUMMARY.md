@@ -86,4 +86,5 @@
   * [Climbing Stairs](suan-6cd53a-dong-tai-gui-hua/climbing-stairs.md)
   * [Triangle](suan-6cd53a-dong-tai-gui-hua/triangle.md)
   * [Unique Paths](suan-6cd53a-dong-tai-gui-hua/unique-paths.md)
+  * [Unique Paths II](suan-6cd53a-dong-tai-gui-hua/unique-paths-ii.md)
 
