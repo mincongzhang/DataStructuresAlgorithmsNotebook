@@ -70,4 +70,6 @@
   * [Container With Most Water](suan-6cd53a-two-pointers/container-with-most-water.md)
   * [Remove Element](suan-6cd53a-two-pointers/remove-element.md)
   * [Remove Duplicates from Sorted Array](suan-6cd53a-two-pointers/remove-duplicates-from-sorted-array.md)
+* [算法:链表里的二分和排序](suan-6cd53a-lian-biao-li-de-er-fen-he-pai-xu.md)
+  * [Merge Two Sorted Lists](suan-6cd53a-lian-biao-li-de-er-fen-he-pai-xu/merge-two-sorted-lists.md)
 
