@@ -84,4 +84,5 @@
   * [Fibonacci](suan-6cd53a-dong-tai-gui-hua/fibonacci.md)
   * Pascal
   * [Climbing Stairs](suan-6cd53a-dong-tai-gui-hua/climbing-stairs.md)
+  * [Triangle](suan-6cd53a-dong-tai-gui-hua/triangle.md)
 
