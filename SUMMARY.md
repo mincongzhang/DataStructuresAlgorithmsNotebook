@@ -93,4 +93,6 @@
 * [其他算法](qi-ta-suan-fa.md)
   * [MapReduce](qi-ta-suan-fa/mapreduce.md)
 * [算法:前后向遍历](suan-6cd53a-qian-hou-xiang-bian-li.md)
+* [算法:搜索和递归](suan-6cd53a-sou-suo-he-di-gui.md)
+  * [Word Ladder](suan-6cd53a-sou-suo-he-di-gui/word-ladder.md)
 
