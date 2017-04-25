@@ -9,12 +9,14 @@ class Solution {
 public:
     int trapRainWater(vector<int>& height) {
         int max_h = INT_MIN;
+        int min_h = INT_MAX;
         for(int i=0; i<height.size();++i){
             max_h = std::max(max_h,height[i]);
+            min_h = std::min(min_h,height[i]);
         }
         
         int total_water = 0;
-        for(int h=1;h<=max_h;++h){
+        for(int h=min_h;h<=max_h;++h){
             int cur_water = 0;
             bool collect = false;
             for(int i=0;i<height.size();++i){
