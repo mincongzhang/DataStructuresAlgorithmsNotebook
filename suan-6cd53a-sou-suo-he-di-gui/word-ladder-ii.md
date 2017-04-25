@@ -1,10 +1,10 @@
-
 ### Word Ladder II
-Given two words (start and end), and a dictionary, find all shortest transformation sequence(s) from start to end, such that:  
-Only one letter can be changed at a time  
-Each intermediate word must exist in the dictionary  
 
-http://www.lintcode.com/en/problem/word-ladder-ii/
+Given two words \(start and end\), and a dictionary, find all shortest transformation sequence\(s\) from start to end, such that:  
+Only one letter can be changed at a time  
+Each intermediate word must exist in the dictionary
+
+[http://www.lintcode.com/en/problem/word-ladder-ii/](http://www.lintcode.com/en/problem/word-ladder-ii/)
 
 ```
 #include <vector>
@@ -50,7 +50,7 @@ private:
       size_t cur_size = m_word_queue.size();
       while(q_it < cur_size){
         std::string origin_word = m_word_queue[q_it].word;
-        
+
         for(char c='a'; c<='z'; ++c){
           for(size_t w=0; w<origin_word.size(); ++w){
             std::string word = origin_word;
@@ -115,3 +115,6 @@ public:
   }
 };
 ```
+
+
+
