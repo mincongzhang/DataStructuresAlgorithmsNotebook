@@ -74,13 +74,10 @@
   * [Container With Most Water](suan-6cd53a-two-pointers/container-with-most-water.md)
   * [Remove Element](suan-6cd53a-two-pointers/remove-element.md)
   * [Remove Duplicates from Sorted Array](suan-6cd53a-two-pointers/remove-duplicates-from-sorted-array.md)
-* [其他算法](qi-ta-suan-fa.md)
-  * [MapReduce](qi-ta-suan-fa/mapreduce.md)
 * [算法:数组相关算法](suan-6cd53a-shu-zu-xiang-guan-suan-fa.md)
   * [Subarray Sum](suan-6cd53a-shu-zu-xiang-guan-suan-fa/subarray-sum.md)
   * [Product of Array Exclude Itself](suan-6cd53a-shu-zu-xiang-guan-suan-fa/product-of-array-exclude-itself.md)
-* [算法:前后向遍历](suan-6cd53a-qian-hou-xiang-bian-li.md)
-* [算法:动态规划](suan-6cd53a-dong-tai-gui-hua.md)
+* [算法:动态规划\(完成\)](suan-6cd53a-dong-tai-gui-hua.md)
   * [Fibonacci](suan-6cd53a-dong-tai-gui-hua/fibonacci.md)
   * Pascal
   * [Climbing Stairs](suan-6cd53a-dong-tai-gui-hua/climbing-stairs.md)
@@ -93,4 +90,7 @@
   * [Distinct Subsequences](suan-6cd53a-dong-tai-gui-hua/distinct-subsequences.md)
   * [Backpack](suan-6cd53a-dong-tai-gui-hua/backpack.md)
   * [Interleaving String](suan-6cd53a-dong-tai-gui-hua/interleaving-string.md)
+* [其他算法](qi-ta-suan-fa.md)
+  * [MapReduce](qi-ta-suan-fa/mapreduce.md)
+* [算法:前后向遍历](suan-6cd53a-qian-hou-xiang-bian-li.md)
 
