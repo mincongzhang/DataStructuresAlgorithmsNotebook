@@ -1,11 +1,11 @@
-
 ### Subsets II
+
 Given a list of numbers that may has duplicate numbers, return all possible subsets:  
 Each element in a subset must be in non-descending order.  
 The ordering between two subsets is free.  
-The solution set must not contain duplicate subsets.  
+The solution set must not contain duplicate subsets.
 
-http://www.lintcode.com/en/problem/subsets-ii/
+[http://www.lintcode.com/en/problem/subsets-ii/](http://www.lintcode.com/en/problem/subsets-ii/)
 
 ```
 #include <algorithm>
@@ -62,3 +62,6 @@ S = [1,2,2]
 [1][2][2]
 */
 ```
+
+
+
