@@ -97,4 +97,5 @@
   * [Word Ladder](suan-6cd53a-sou-suo-he-di-gui/word-ladder.md)
   * [Word Ladder II](suan-6cd53a-sou-suo-he-di-gui/word-ladder-ii.md)
   * [N-Queens](suan-6cd53a-sou-suo-he-di-gui/n-queens.md)
+  * [Valid Sudoku](suan-6cd53a-sou-suo-he-di-gui/valid-sudoku.md)
 
