@@ -10,6 +10,8 @@ http://www.lintcode.com/en/problem/maximum-subarray/
 //Binary search, search left, and search right, and recursively solve the problem
 
 //Solution3 O(n) update local max and global max at the same time
+maxSubArray(A, i) = A[i] + maxSubArray(A, i - 1) > 0 ? maxSubArray(A, i - 1) : 0; 
+
 class Solution {
 public:
   /**
