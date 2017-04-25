@@ -90,9 +90,6 @@
   * [Distinct Subsequences](suan-6cd53a-dong-tai-gui-hua/distinct-subsequences.md)
   * [Backpack](suan-6cd53a-dong-tai-gui-hua/backpack.md)
   * [Interleaving String](suan-6cd53a-dong-tai-gui-hua/interleaving-string.md)
-* [其他算法](qi-ta-suan-fa.md)
-  * [MapReduce](qi-ta-suan-fa/mapreduce.md)
-* [算法:前后向遍历](suan-6cd53a-qian-hou-xiang-bian-li.md)
 * [算法:搜索和递归](suan-6cd53a-sou-suo-he-di-gui.md)
   * [Word Ladder](suan-6cd53a-sou-suo-he-di-gui/word-ladder.md)
   * [Word Ladder II](suan-6cd53a-sou-suo-he-di-gui/word-ladder-ii.md)
@@ -100,4 +97,7 @@
   * [Valid Sudoku](suan-6cd53a-sou-suo-he-di-gui/valid-sudoku.md)
   * [Subsets](suan-6cd53a-sou-suo-he-di-gui/subsets.md)
   * [Subsets II](suan-6cd53a-sou-suo-he-di-gui/subsets-ii.md)
+* [其他算法](qi-ta-suan-fa.md)
+  * [MapReduce](qi-ta-suan-fa/mapreduce.md)
+* [算法:前后向遍历](suan-6cd53a-qian-hou-xiang-bian-li.md)
 
