@@ -40,6 +40,7 @@
   * [Sqrt](binary-search/sqrt.md)
   * [Fast Power](binary-search/fast-power.md)
   * [Wood Cut](binary-search/wood-cut.md)
+  * [Pow\(x, n\)](binary-search/powx-n.md)
 * [算法:贪心算法\(完成\)](greedy-algorithm.md)
   * [Single Number](greedy-algorithm/single-number.md)
   * [Majority Number](greedy-algorithm/majority-number.md)
