@@ -99,4 +99,5 @@
   * [N-Queens](suan-6cd53a-sou-suo-he-di-gui/n-queens.md)
   * [Valid Sudoku](suan-6cd53a-sou-suo-he-di-gui/valid-sudoku.md)
   * [Subsets](suan-6cd53a-sou-suo-he-di-gui/subsets.md)
+  * [Subsets II](suan-6cd53a-sou-suo-he-di-gui/subsets-ii.md)
 
