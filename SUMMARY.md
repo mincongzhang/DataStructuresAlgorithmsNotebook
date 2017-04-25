@@ -74,7 +74,7 @@
   * [Container With Most Water](suan-6cd53a-two-pointers/container-with-most-water.md)
   * [Remove Element](suan-6cd53a-two-pointers/remove-element.md)
   * [Remove Duplicates from Sorted Array](suan-6cd53a-two-pointers/remove-duplicates-from-sorted-array.md)
-* [算法:数组相关算法](suan-6cd53a-shu-zu-xiang-guan-suan-fa.md)
+* [算法:数组相关算法\(完成\)](suan-6cd53a-shu-zu-xiang-guan-suan-fa.md)
   * [Subarray Sum](suan-6cd53a-shu-zu-xiang-guan-suan-fa/subarray-sum.md)
   * [Product of Array Exclude Itself](suan-6cd53a-shu-zu-xiang-guan-suan-fa/product-of-array-exclude-itself.md)
 * [算法:动态规划\(完成\)](suan-6cd53a-dong-tai-gui-hua.md)
