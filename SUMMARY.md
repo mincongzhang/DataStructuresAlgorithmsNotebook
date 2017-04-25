@@ -90,6 +90,7 @@
   * [Distinct Subsequences](suan-6cd53a-dong-tai-gui-hua/distinct-subsequences.md)
   * [Backpack](suan-6cd53a-dong-tai-gui-hua/backpack.md)
   * [Interleaving String](suan-6cd53a-dong-tai-gui-hua/interleaving-string.md)
+  * [Max Subarray](suan-6cd53a-dong-tai-gui-hua/max-subarray.md)
 * [算法:搜索和递归\(完成\)](suan-6cd53a-sou-suo-he-di-gui.md)
   * [Word Ladder](suan-6cd53a-sou-suo-he-di-gui/word-ladder.md)
   * [Word Ladder II](suan-6cd53a-sou-suo-he-di-gui/word-ladder-ii.md)
