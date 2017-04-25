@@ -96,4 +96,5 @@
 * [算法:搜索和递归](suan-6cd53a-sou-suo-he-di-gui.md)
   * [Word Ladder](suan-6cd53a-sou-suo-he-di-gui/word-ladder.md)
   * [Word Ladder II](suan-6cd53a-sou-suo-he-di-gui/word-ladder-ii.md)
+  * [N-Queens](suan-6cd53a-sou-suo-he-di-gui/n-queens.md)
 
