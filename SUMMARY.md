@@ -90,4 +90,5 @@
   * [Unique Binary Search Trees](suan-6cd53a-dong-tai-gui-hua/unique-binary-search-trees.md)
   * [Edit Distance](suan-6cd53a-dong-tai-gui-hua/edit-distance.md)
   * [Word Break](suan-6cd53a-dong-tai-gui-hua/word-break.md)
+  * [Distinct Subsequences](suan-6cd53a-dong-tai-gui-hua/distinct-subsequences.md)
 
