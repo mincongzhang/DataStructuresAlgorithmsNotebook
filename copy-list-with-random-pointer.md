@@ -61,3 +61,11 @@ public:
   }
 };
 ```
+
+#### A better way to avoid manipulate original list
+
+```
+Use a hashtable saving orig_node->new_node
+loop original to copy, and get hash[orig_node]->new_node
+loop again to copy the random pointer
+```
