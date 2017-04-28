@@ -60,7 +60,7 @@ public:
 };
 ```
 
-#### Duplicate node solution
+#### Copy to next node solution
 
 ```
 /**
