@@ -1,6 +1,10 @@
-
 ### Reverse Linked List
+
 Reverse a linked list.
+
+https://leetcode.com/problems/reverse-linked-list/\#/description
+
+http://www.lintcode.com/en/problem/reverse-linked-list/
 
 ```
 /**
@@ -24,11 +28,11 @@ class Solution {
     insert_node->next = cur_node->next;
     cur_node->next = insert_node;
   }
-  
+
   public:
   ListNode *reverse(ListNode *head){
     if(head == NULL) return NULL;
-  
+
     ListNode * new_head = new ListNode(INT_MIN);
     while(head != NULL){
       insert(new_head,head->val);
@@ -37,5 +41,7 @@ class Solution {
     return new_head->next;
   }
 };
-
 ```
+
+
+
