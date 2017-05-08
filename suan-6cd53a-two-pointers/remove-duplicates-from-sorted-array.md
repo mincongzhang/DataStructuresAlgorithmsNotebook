@@ -14,6 +14,26 @@ class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
         if(nums.empty()) return 0;
+
+        //[1,1,1,2]
+        int non_dup_it = 1;
+        for(int i=1; i<nums.size(); ++i){
+            if(nums[i]!=nums[i-1]){
+                nums[non_dup_it] = nums[i];
+                non_dup_it++;
+            }
+        }
+
+        return non_dup_it;
+    }
+};
+```
+
+```
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        if(nums.empty()) return 0;
         int non_dup_it=0;
         for(int it=0;it<nums.size();++it){
             if(nums[it]!=nums[non_dup_it]){
