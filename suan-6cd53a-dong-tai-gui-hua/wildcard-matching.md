@@ -11,6 +11,8 @@ The function prototype should be:
 bool isMatch(const char *s, const char *p)
 
 Some examples:
+
+```
 isMatch("aa","a") → false
 isMatch("aa","aa") → true
 isMatch("aaa","aa") → false
@@ -18,6 +20,7 @@ isMatch("aa", "*") → true
 isMatch("aa", "a*") → true
 isMatch("ab", "?*") → true
 isMatch("aab", "c*a*b") → false
+```
 
 https://leetcode.com/problems/wildcard-matching/#/description
 
