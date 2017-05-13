@@ -102,6 +102,7 @@
   * [Subsets II](suan-6cd53a-sou-suo-he-di-gui/subsets-ii.md)
 * [其他算法](qi-ta-suan-fa.md)
   * [MapReduce](qi-ta-suan-fa/mapreduce.md)
+  * [Power of Two](qi-ta-suan-fa/power-of-two.md)
 * [算法:前后向遍历](suan-6cd53a-qian-hou-xiang-bian-li.md)
   * [Trapping Rain Water](suan-6cd53a-qian-hou-xiang-bian-li/trapping-rain-water.md)
 
