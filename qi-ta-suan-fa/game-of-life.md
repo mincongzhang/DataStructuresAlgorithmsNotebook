@@ -1,6 +1,6 @@
 ### Game of Life
 
-https://leetcode.com/problems/game-of-life/#/description
+[https://leetcode.com/problems/game-of-life/\#/description](https://leetcode.com/problems/game-of-life/#/description)
 
 ```
 class Solution {
@@ -40,8 +40,8 @@ public:
                 bool live = board[i][j]>0;
                 if     (live && (count>3  || count <2)) board[i][j] = 2;
                 else if(live && (count==3 || count==2)) board[i][j] = 3;
-                else if(!live && count==3)             board[i][j] = -2;
-                else                                   board[i][j] = -1;
+                else if(!live && count==3)              board[i][j] = -2;
+                else                                    board[i][j] = -1;
                 
                 //std::cout<<">"<<board[i][j]<<",";
             }
@@ -51,9 +51,12 @@ public:
         for(int i=0; i<board.size(); ++i){
             for(int j=0; j<board[i].size();++j){
                 if(board[i][j]==-2 || board[i][j]==3) board[i][j]=1;
-                else board[i][j]=0;
+                else                                  board[i][j]=0;
             }
         }        
     }
 };
 ```
+
+
+
