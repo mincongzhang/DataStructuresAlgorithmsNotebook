@@ -41,6 +41,7 @@
   * [Fast Power](binary-search/fast-power.md)
   * [Wood Cut](binary-search/wood-cut.md)
   * [Pow\(x, n\)](binary-search/powx-n.md)
+  * [Single Element in a Sorted Array](binary-search/single-element-in-a-sorted-array.md)
 * [算法:贪心算法\(完成\)](greedy-algorithm.md)
   * [Single Number](greedy-algorithm/single-number.md)
   * [Majority Number](greedy-algorithm/majority-number.md)
