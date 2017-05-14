@@ -69,40 +69,38 @@ namespace{
 
 bool findNewFriend(vector<string> & friends, vector<bool> visited, uint i){
     if(visited[i]) return false;
-    
+
     int direct_new_friends = 0;
     for(uint j=0; j<friends[i].size();++j){
         if(friends[i][j] == 'Y'){
             //reset, not new friend anymore
             friends[i][j] = 'N';
             friends[j][i] = 'N';
-            
+
             //Find friend's friend (depth first search)
             findNewFriend(friends,visited,j);
             direct_new_friends++;
         }
     }
-    
+
     visited[i] = true;
     return direct_new_friends>0;
 }
 
 int friendCircles(vector < string > friends) {
     int count = 0;
-    
+
     vector<bool> visited(friends.size(),false);
-    
+
     for(uint i=0; i<friends.size(); ++i){
         //search new friend for this people
         if(findNewFriend(friends,visited,i)){
             count++;
         }
     }
-    
+
     return count;
 }
-
-
 ```
 
 
