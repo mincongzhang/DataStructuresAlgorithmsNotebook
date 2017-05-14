@@ -108,4 +108,6 @@
   * [Game of Life](qi-ta-suan-fa/game-of-life.md)
 * [算法:前后向遍历](suan-6cd53a-qian-hou-xiang-bian-li.md)
   * [Trapping Rain Water](suan-6cd53a-qian-hou-xiang-bian-li/trapping-rain-water.md)
+* [算法:图](suan-6cd53a-tu.md)
+  * [Friend Circles](suan-6cd53a-tu/friend-circles.md)
 
