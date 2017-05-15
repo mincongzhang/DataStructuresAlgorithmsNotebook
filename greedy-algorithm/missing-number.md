@@ -8,6 +8,8 @@ Your algorithm should run in linear runtime complexity. Could you implement it u
 https://leetcode.com/problems/missing-number/#/description
 
 ```
+//O(n), binary search can be O(logn)
+
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
