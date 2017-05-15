@@ -54,3 +54,30 @@ public:
     }
 };
 ```
+
+```
+namespace{
+    typedef unsigned int uint;
+}
+
+class Solution {
+public:
+	/**
+	 * @param A: Array of integers.
+	 * return: The single number.
+	 */
+    int singleNumber(vector<int> &A) {
+        unordered_map<int,int> hash;
+        for(uint i=0; i<A.size(); ++i){
+            hash[A[i]]++;
+        }
+        
+        for(unordered_map<int,int>::const_iterator it=hash.begin(); it!=hash.end();++it){
+            if(it->second == 1) return it->first;
+        }
+        
+        return 0;
+    }
+};
+
+```
