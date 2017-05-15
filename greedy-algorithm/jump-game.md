@@ -29,3 +29,33 @@ public:
     }
 };
 ```
+
+```
+//Dynamic Programming O(n^2)
+class Solution {
+private:
+    bool canJump(const vector<int> & A, int i){
+        if(A[i]+i <= i) return false;
+        if(A[i]+i >= A.size()-1) return true;
+        
+        int step = A[i];
+        bool can = false;
+        while(step){
+            can = can | canJump(A,i+step);
+            step--;
+        }
+        return can;
+    }
+    
+public:
+    /**
+     * @param A: A list of integers
+     * @return: The boolean answer
+     */
+    bool canJump(vector<int> A) {
+        if(A.size()<=1) return true;
+        return canJump(A,0);
+    }
+};
+
+```
