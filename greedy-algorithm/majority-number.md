@@ -34,25 +34,30 @@ public:
      * @return: The majority number
      */
     int majorityNumber(vector<int> nums) {
-        if(nums.empty()) return 0;
+        int count = 0;
+        int major_num = 0;
         
-        int num(0),count(0);
-        for(int i=0;i<nums.size();++i){
-            if(count == 0){
-                num = nums[i];
+        //Voting algorithm
+        //if 2 nums diff, cancel out each other
+        //the remaining number should be the major number
+        
+        for(int i=0; i<nums.size(); ++i){
+            if(count==0){
+                major_num = nums[i];
                 count++;
                 continue;
             }
             
-            if(num == nums[i]){
-                count++;
-            } else {
+            if(nums[i]!=major_num){
                 count--;
+            } else {
+                count++;
             }
         }
         
-        return num;
+        return major_num;
     }
 };
+
 
 ```
