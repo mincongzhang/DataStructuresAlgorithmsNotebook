@@ -12,22 +12,21 @@ Input: \[7, 6, 4, 3, 1\]
 Output: 0  
 In this case, no transaction is done, i.e. max profit = 0.
 
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock
+[https://leetcode.com/problems/best-time-to-buy-and-sell-stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
 
 ```
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
-        if(prices.empty()) return 0;
-
-        int max_price = 0;
-        int local_min = prices[0];
-        for(size_t i=1; i<prices.size(); ++i){
-            local_min = std::min(prices[i],local_min);
-            max_price = std::max(prices[i] - local_min,max_price); 
+        int min_price  = INT_MAX;
+        int max_profit = INT_MIN;
+        for(int i=0; i<prices.size(); ++i){
+            min_price = min(min_price, prices[i]);
+            int profit = prices[i] - min_price;
+            max_profit = max(max_profit,profit);
         }
-
-        return max_price;
+        
+        return max_profit;
     }
 };
 ```
