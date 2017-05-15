@@ -54,6 +54,7 @@ int longestChain(vector < string > words) {
     int largest_group = 0;
     LengthGroup groups;
     
+    //Group words with length
     for(uint i=0; i<words.size(); ++i){
         int length = words[i].size();
         //Initial all word chain number as 1
