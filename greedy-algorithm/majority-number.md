@@ -3,6 +3,9 @@ Given an array of integers, the majority number is the number that occurs more t
 http://www.lintcode.com/en/problem/majority-number/
 
 ```
+//Sorting then find the majority number, O(nlogn)
+//Can also use hashtable, O(n) but also need O(n) space
+
 #include <algorithm>
 
 class Solution {
