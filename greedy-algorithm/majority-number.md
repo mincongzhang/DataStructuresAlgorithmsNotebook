@@ -25,6 +25,8 @@ public:
 
 ```
 //投票算法
+https://segmentfault.com/a/1190000004905350
+
 class Solution {
 public:
     /**
