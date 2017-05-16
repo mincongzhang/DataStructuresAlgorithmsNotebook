@@ -22,7 +22,7 @@ cache.get(4);       // returns 4
 
 ```
 //1.Hash table: key->list_iterator
-//2.Maintain a recent used list (remove/update to front)
+//2.Maintain a recent used list (find/update to front/remove back)
 
 namespace {
     struct KeyValue{
