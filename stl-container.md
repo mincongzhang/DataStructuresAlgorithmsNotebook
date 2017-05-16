@@ -86,6 +86,33 @@ int main(){
 }
 ```
 
+```
+//List erase
+#include <iostream>
+#include <list>
+
+int main()
+{
+    std::list<int> l;
+    l.push_back(2);
+    std::list<int>::iterator it = l.begin();
+    if(it!=l.end()){
+        std::cout<<*it<<std::endl;    
+    }
+    
+    it=l.erase(it);
+    if(it!=l.end()){
+        std::cout<<"still exist"<<*it<<std::endl;    
+    } else {
+        std::cout<<"empty"<<std::endl; 
+        
+        if(l.begin()==l.end()){
+            std::cout<<"begin==end now"<<std::endl; 
+        }
+    }
+}
+```
+
 ### forward\_list \(C++11\)
 
 单向链表
