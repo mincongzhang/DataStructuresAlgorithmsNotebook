@@ -48,7 +48,7 @@ int main()
 
 ### list
 
-环形双向列表
+双向列表
 
 ```
 #include <iostream>
@@ -214,5 +214,6 @@ int main(){
   std::cout<<"stack top:"<<int_stack.top()<<std::endl;
 }
 ```
+
 
 
