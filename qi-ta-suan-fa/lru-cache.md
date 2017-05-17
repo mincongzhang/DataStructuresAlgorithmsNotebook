@@ -20,6 +20,8 @@ cache.get(3);       // returns 3
 cache.get(4);       // returns 4
 ```
 
+https://leetcode.com/problems/lru-cache/#/description
+
 ```
 //1.Hash table: key->list_iterator
 //2.Maintain a recent used list (find/update to front/remove back)
