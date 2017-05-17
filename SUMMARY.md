@@ -108,6 +108,7 @@
   * [Power of Four](qi-ta-suan-fa/power-of-four.md)
   * [Game of Life](qi-ta-suan-fa/game-of-life.md)
   * [LRU Cache](qi-ta-suan-fa/lru-cache.md)
+  * [LFU Cache](qi-ta-suan-fa/lfu-cache.md)
 * [算法:前后向遍历](suan-6cd53a-qian-hou-xiang-bian-li.md)
   * [Trapping Rain Water](suan-6cd53a-qian-hou-xiang-bian-li/trapping-rain-water.md)
 * [算法:图](suan-6cd53a-tu.md)
