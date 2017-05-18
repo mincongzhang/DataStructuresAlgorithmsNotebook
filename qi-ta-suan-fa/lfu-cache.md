@@ -55,19 +55,24 @@ private:
     m_freq_map[val_freq.freq].push_front(key_val);
     val_freq.list_it = m_freq_map[val_freq.freq].begin();
 
+    //std::cout<<"Freq Map:"<<std::endl;
+    //for(FreqMap::const_iterator it=m_freq_map.begin();it!=m_freq_map.end(); ++it){
+      //std::cout<<"freq:"<<it->first<<", list size:"<<(it->second).size()<<std::endl;
+    //}
+
     //erase empty min freq, update min freq
     updateMinFreqPQueue(val_freq.freq);
   }
 
   void updateMinFreqPQueue(int cur_freq){
     if(m_min_freq_pq.empty()){
-      std::cout<<"push first min_freq:"<<cur_freq<<std::endl;
+      //std::cout<<"push first min_freq:"<<cur_freq<<std::endl;
       m_min_freq_pq.push(cur_freq);
       return;
     }
 
     if(cur_freq < m_min_freq_pq.top()){
-      std::cout<<"updating min_freq:"<<cur_freq<<std::endl;
+      //std::cout<<"updating min_freq:"<<cur_freq<<std::endl;
       m_min_freq_pq.push(cur_freq);
     }
   }
@@ -97,7 +102,7 @@ private:
     for(FreqMap::const_iterator it=m_freq_map.begin();it!=m_freq_map.end(); ++it){
       min_freq = std::min(min_freq,it->first);
     }
-    std::cout<<"m_min_freq_pq is totally cleared, updating a new min_freq:"<<min_freq<<std::endl;
+    //std::cout<<"m_min_freq_pq is totally cleared, updating a new min_freq:"<<min_freq<<std::endl;
     m_min_freq_pq.push(min_freq);
 
   }
@@ -107,27 +112,27 @@ private:
       return;
     }
 
-    std::cout<<"should be erasing"<<std::endl;
+    //std::cout<<"should be erasing"<<std::endl;
 
     if(m_min_freq_pq.empty()){
-      std::cout<<"ERROR:m_min_freq_pq.empty! fail to erase"<<std::endl;
+      //std::cout<<"ERROR:m_min_freq_pq.empty! fail to erase"<<std::endl;
       return;
     }
 
-    std::cout<<"Freq Map:"<<std::endl;
-    for(FreqMap::const_iterator it=m_freq_map.begin();it!=m_freq_map.end(); ++it){
-      std::cout<<"freq:"<<it->first<<", list size:"<<(it->second).size()<<std::endl;
-    }
+    //std::cout<<"Freq Map:"<<std::endl;
+    //for(FreqMap::const_iterator it=m_freq_map.begin();it!=m_freq_map.end(); ++it){
+      //std::cout<<"freq:"<<it->first<<", list size:"<<(it->second).size()<<std::endl;
+    //}
 
     eraseEmptyMinFreq();
 
     if(m_min_freq_pq.empty()){
-      std::cout<<"ERROR:m_min_freq_pq.empty! fail to erase"<<std::endl;
+      //std::cout<<"ERROR:m_min_freq_pq.empty! fail to erase"<<std::endl;
       return;
     }
 
     int min_freq = m_min_freq_pq.top();
-    std::cout<<"min freq:"<<min_freq<<std::endl;
+    //std::cout<<"min freq:"<<min_freq<<std::endl;
     FreqMap::iterator it = m_freq_map.find(min_freq);
     if(it!=m_freq_map.end() && !(it->second).empty()){
 
@@ -140,7 +145,7 @@ private:
       return;
     }
 
-    std::cout<<"ERROR: FreqMap with ["<<min_freq<<"] has no elems! fail to erase"<<std::endl;
+    //std::cout<<"ERROR: FreqMap with ["<<min_freq<<"] has no elems! fail to erase"<<std::endl;
 
   }
 
@@ -148,25 +153,31 @@ public:
   LFUCache(int capacity):m_cap(capacity) {}
 
   int get(int key) {
+    if(m_cap==0) return -1;
+
+    //std::cout<<std::endl;
+    //std::cout<<"### get("<<key<<") ###"<<std::endl;
+
     int get_val = -1;
     KeyMap::iterator key_it = m_key_map.find(key);
 
     //Found
     if(key_it!=m_key_map.end()){
-      ValFreq val_freq = key_it->second;
+      ValFreq & val_freq = key_it->second;
       KeyVal key_val(key,val_freq.val);
       updateFreq(key_val,val_freq);
       get_val = val_freq.val;
     }
 
-    std::cout<<std::endl;
-    std::cout<<"### get("<<key<<"):"<<get_val<<" ###"<<std::endl;
+    //std::cout<<"### get "<<get_val<<" ###"<<std::endl;
     return get_val;
   }
 
   void put(int key, int value) {
-    std::cout<<std::endl;
-    std::cout<<"### put("<<key<<","<<value<<") ###"<<std::endl;
+    if(m_cap==0) return;
+
+    //std::cout<<std::endl;
+    //std::cout<<"### put("<<key<<","<<value<<") ###"<<std::endl;
 
     KeyMap::iterator key_it = m_key_map.find(key);
     KeyVal key_val(key,value);
@@ -195,5 +206,6 @@ public:
  * int param_1 = obj.get(key);
  * obj.put(key,value);
  */
+
 
 ```
