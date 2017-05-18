@@ -13,6 +13,71 @@ Some examples:
 https://leetcode.com/problems/evaluate-reverse-polish-notation/#/description
 
 ```
+//Design: using functor
+typedef unsigned int uint;
+
+struct Operator {
+    virtual int operator()(int a, int b)=0;  
+};
+struct Add : public Operator {
+    int operator()(int a, int b){ return a+b; }
+};
+struct Minus : public Operator {
+    int operator()(int a, int b){ return a-b; }
+};
+struct Multi : public Operator {
+    int operator()(int a, int b){ return a*b; }
+};
+struct Div : public Operator {
+    int operator()(int a, int b){ return a/b; }
+};
+
+class Solution {
+private:
+    unordered_map<string,Operator *> m_oper_map;
+    bool isOperator(const string & s){
+        return m_oper_map.find(s)!=m_oper_map.end();
+    }
+    
+public:
+    Solution(){
+        m_oper_map.insert(make_pair("+",new Add()));
+        m_oper_map.insert(make_pair("-",new Minus()));
+        m_oper_map.insert(make_pair("*",new Multi()));
+        m_oper_map.insert(make_pair("/",new Div()));
+    }
+
+
+    int evalRPN(vector<string>& tokens) {
+        stack<int> stk;
+        
+        for(uint i=0; i<tokens.size(); ++i){
+            const std::string & s = tokens[i];
+            
+            //1.handle number
+            if(!isOperator(s)){
+                stk.push(atoi(s.c_str()));
+                continue;
+            }
+            
+            //2.handle operator
+            //check validation
+            if(stk.size()<2) { return INT_MIN; }
+            int n2 = stk.top(); stk.pop();
+            int n1 = stk.top(); stk.pop();
+            int result;
+            result = (*m_oper_map[s])(n1,n2);
+            stk.push(result);
+        }
+        
+        if(stk.size()!=1) { return INT_MIN; }
+        return stk.top();
+        
+    }
+};
+```
+
+```
 //Design: using function pointer
 namespace {
 typedef unsigned int uint;
