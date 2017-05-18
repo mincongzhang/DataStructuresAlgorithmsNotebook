@@ -13,7 +13,7 @@ Some examples:
 https://leetcode.com/problems/evaluate-reverse-polish-notation/#/description
 
 ```
-//Design: using functor
+//Design: using functor, and polymorphism
 typedef unsigned int uint;
 
 struct Operator {
