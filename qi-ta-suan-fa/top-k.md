@@ -1,3 +1,7 @@
 ### Top K
 
 topK问题在海量数据处理中也是一个非常经典的问题，所以还是要重视。
+
+Top K in list
+
+Median of 2 sorted array/list
