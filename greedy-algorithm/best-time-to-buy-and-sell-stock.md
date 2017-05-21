@@ -25,11 +25,28 @@ public:
             int profit = prices[i] - min_price;
             max_profit = max(max_profit,profit);
         }
-        
+
         return max_profit;
     }
 };
 ```
 
-
+```
+typedef unsigned int uint;
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        if(prices.size()<=1) return 0;
+        
+        int hold(INT_MIN);
+        int release(INT_MIN);
+        for(uint i=0; i<prices.size(); ++i){
+            hold = max(hold,-prices[i]);
+            release = max(release, hold+prices[i]);
+        }
+        
+        return release;
+    }
+};
+```
 
