@@ -12,6 +12,7 @@ Find the median of the two sorted arrays. The overall run time complexity should
 https://leetcode.com/problems/median-of-two-sorted-arrays/#/description
 
 ```
+
 class Solution {
 public:
   double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
@@ -45,26 +46,27 @@ public:
     int n1_left_count = min (k/2, n1_size);
     int n2_left_count = k - n1_left_count;
 
-    int n1_offset = n1_left + n1_left_count;
-    int n2_offset = n2_left + n2_left_count;
+    int n1_pos = n1_left + n1_left_count;
+    int n2_pos = n2_left + n2_left_count;
 
-    if (n1[n1_offset - 1] == n2[n2_offset - 1]) {
-      return n1[n1_offset - 1];
+    if (n1[n1_pos - 1] == n2[n2_pos - 1]) {
+      return n1[n1_pos - 1];
     }
 
-    if (n1[n1_offset - 1] < n2[n2_offset - 1]) {
-      return findKth(n1, n1_offset, n1_right, n2, n2_left, n2_right, k - n1_left_count);
+    if (n1[n1_pos - 1] < n2[n2_pos - 1]) {
+      return findKth(n1, n1_pos, n1_right, n2, n2_left, n2_right, k - n1_left_count);
     } else {
-      return findKth(n1, n1_left, n1_right, n2, n2_offset, n2_right, k - n2_left_count);
+      return findKth(n1, n1_left, n1_right, n2, n2_pos, n2_right, k - n2_left_count);
     }
     /*
     // Could also ignore elements from the left, but actually not necessary
-    if (n1[n1_offset - 1] < n2[n2_offset - 1]) {
-      return findKth(n1, n1_offset, n1_right, n2, n2_left, n2_offset, k - n1_left_count);
+    if (n1[n1_pos - 1] < n2[n2_pos - 1]) {
+    return findKth(n1, n1_pos, n1_right, n2, n2_left, n2_pos, k - n1_left_count);
     } else {
-      return findKth(n1, n1_left, n1_offset, n2, n2_offset, n2_right, k - n2_left_count);
+    return findKth(n1, n1_left, n1_pos, n2, n2_pos, n2_right, k - n2_left_count);
     }
     */
   }
 };
+
 ```
