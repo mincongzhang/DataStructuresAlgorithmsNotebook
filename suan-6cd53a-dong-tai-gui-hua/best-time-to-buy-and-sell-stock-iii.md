@@ -54,15 +54,15 @@ public:
     int maxProfit(vector<int>& prices) {
         int local_min1(INT_MIN), local_min2(INT_MIN);
         int max_profit1(0), max_profit2(0);
-        
+
         for(int i=0; i<prices.size(); ++i){
-            local_min1    = max(local_min1, -prices[i]);
+            local_min1  = max(local_min1, -prices[i]);
             max_profit1 = max(max_profit1,local_min1+prices[i]);
 
-            local_min2    = max(local_min2,  max_profit1-prices[i]);
+            local_min2  = max(local_min2,  max_profit1-prices[i]);
             max_profit2 = max(max_profit2,local_min2+prices[i]);
         }
-        
+
         return max_profit2;
     }
 };
