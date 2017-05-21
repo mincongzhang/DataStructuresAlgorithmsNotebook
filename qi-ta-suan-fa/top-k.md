@@ -11,7 +11,8 @@ Find the median of the two sorted arrays. The overall run time complexity should
 
 https://leetcode.com/problems/median-of-two-sorted-arrays/#/description
 
-```class Solution {
+```
+class Solution {
 public:
   double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
     int n1_size = nums1.size(), n2_size = nums2.size();
