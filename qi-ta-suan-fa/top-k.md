@@ -57,15 +57,15 @@ public:
     } else {
       return findKth(n1, n1_left, n1_right, n2, n2_offset, n2_right, k - n2_left_count);
     }
-    
     /*
     // Could also ignore elements from the left, but actually not necessary
     if (n1[n1_offset - 1] < n2[n2_offset - 1]) {
-        return findKth(n1, n1_offset, n1_right, n2, n2_left, n2_offset, k - n1_left_count);
+      return findKth(n1, n1_offset, n1_right, n2, n2_left, n2_offset, k - n1_left_count);
     } else {
-        return findKth(n1, n1_left, n1_offset, n2, n2_offset, n2_right, k - n2_left_count);
+      return findKth(n1, n1_left, n1_offset, n2, n2_offset, n2_right, k - n2_left_count);
     }
     */
   }
 };
+
 ```
