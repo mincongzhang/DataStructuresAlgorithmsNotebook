@@ -52,20 +52,21 @@ public:
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
-        int hold1(INT_MIN), hold2(INT_MIN);
-        int release1(0), release2(0);
+        int local_min1(INT_MIN), local_min2(INT_MIN);
+        int max_profit1(0), max_profit2(0);
         
         for(int i=0; i<prices.size(); ++i){
-            hold1    = max(hold1, -prices[i]);
-            release1 = max(release1,hold1+prices[i]);
+            local_min1    = max(local_min1, -prices[i]);
+            max_profit1 = max(max_profit1,local_min1+prices[i]);
 
-            hold2    = max(hold2,  release1-prices[i]);
-            release2 = max(release2,hold2+prices[i]);
+            local_min2    = max(local_min2,  max_profit1-prices[i]);
+            max_profit2 = max(max_profit2,local_min2+prices[i]);
         }
         
-        return release2;
+        return max_profit2;
     }
 };
 ```
+
 
 
