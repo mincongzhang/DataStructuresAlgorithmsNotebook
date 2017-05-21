@@ -4,12 +4,14 @@ Say you have an array for which the ith element is the price of a given stock on
 
 Design an algorithm to find the maximum profit. You may complete at most two transactions.
 
-Note:
-You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
+Note:  
+You may not engage in multiple transactions at the same time \(ie, you must sell the stock before you buy again\).
 
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/#/description
+[https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/\#/description](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/#/description)
 
 ```
+//Dynamic Programming
+
 typedef unsigned int uint;
 
 class Solution {
@@ -17,7 +19,7 @@ private:
     int getProfit(const vector<int>& prices, uint begin, uint transaction){
         if(transaction>=2) return 0;
         if(begin >= prices.size()) return 0;
-        
+
         int min_price = INT_MAX;
         int max_profit = INT_MIN;
 
@@ -25,7 +27,7 @@ private:
             min_price = min(min_price,prices[i]);
 
             int cur_profit = prices[i] - min_price;
-            
+
             //get next max profit
             if(cur_profit > 0){
                 cur_profit += getProfit(prices, i+1, transaction+1);
@@ -34,14 +36,17 @@ private:
                 max_profit = cur_profit;
             }
         }
-     
+
         if(max_profit < 0) return 0;
         return max_profit;
     }
-    
+
 public:
     int maxProfit(vector<int>& prices) {
         return getProfit(prices, 0, 0);
     }
 };
 ```
+
+
+
