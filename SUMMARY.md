@@ -83,7 +83,7 @@
   * [Product of Array Exclude Itself](suan-6cd53a-shu-zu-xiang-guan-suan-fa/product-of-array-exclude-itself.md)
 * [算法:动态规划\(完成\)](suan-6cd53a-dong-tai-gui-hua.md)
   * [Fibonacci](suan-6cd53a-dong-tai-gui-hua/fibonacci.md)
-  * Pascal
+  * [Pascal](suan-6cd53a-dong-tai-gui-hua/pascal.md)
   * [Climbing Stairs](suan-6cd53a-dong-tai-gui-hua/climbing-stairs.md)
   * [Triangle](suan-6cd53a-dong-tai-gui-hua/triangle.md)
   * [Unique Paths](suan-6cd53a-dong-tai-gui-hua/unique-paths.md)
