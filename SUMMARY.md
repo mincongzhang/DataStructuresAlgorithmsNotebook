@@ -29,6 +29,7 @@
   * [Kth Largest Element in an Array](datastructure-related/kth-largest-element-in-an-array.md)
   * [Valid Parentheses](datastructure-related/valid-parentheses.md)
   * [Evaluate Reverse Polish Notation](datastructure-related/evaluate-reverse-polish-notation.md)
+  * [Encode and Decode TinyURL](datastructure-related/encode-and-decode-tinyurl.md)
 * [算法:二叉搜索\(完成\)](binary-search.md)
   * [First Position of Target](binary-search/first-position-of-target.md)
   * [Search Insert Position](binary-search/search-insert-position.md)
