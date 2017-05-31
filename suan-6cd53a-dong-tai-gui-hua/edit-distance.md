@@ -36,3 +36,35 @@ public:
   }
 };
 ```
+
+```
+class Solution {
+private:
+  int getMin(int n1,int n2,int n3){
+    return std::min(n1,std::min(n2,n3));
+  }
+  
+  int getMinDist(const std::string & word1,int w1,const std::string word2, int w2){
+	if(w1==word1.size()) return word2.size()-w2;
+	if(w2==word2.size()) return word1.size()-w1;
+	
+	if(word1[w1]==word2[w2]) return getMinDist(word1,w1+1,word2,w2+1);
+	
+	return 1+getMin(
+	getMinDist(word1,w1,word2,w2+1),   //word1 add
+	getMinDist(word1,w1+1,word2,w2),   //word1 delete
+	getMinDist(word1,w1+1,word2,w2+1)  //replace
+	);
+
+  }
+
+public:
+  /**
+   * @param word1 & word2: Two string.
+   * @return: The minimum number of steps.
+   */
+  int minDistance(string word1, string word2) {
+    return getMinDist(word1,0,word2,0);
+  }
+};
+```
