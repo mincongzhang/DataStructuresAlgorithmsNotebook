@@ -68,3 +68,54 @@ public:
   }
 };
 ```
+
+```
+//Non-recursive solution, using a map to save metadata
+class Solution {
+private:
+  int getMin(int n1,int n2,int n3){
+    return std::min(n1,std::min(n2,n3));
+  }
+
+public:
+  /**
+   * @param word1 & word2: Two string.
+   * @return: The minimum number of steps.
+   */
+  int minDistance(string word1, string word2) {
+    //return getMinDist(word1,0,word2,0);
+    
+    vector<int> v(word1.size()+1,0);
+    vector< vector<int> > dist_map(word2.size()+1,v);
+
+    for(int j=0; j<=word1.size(); ++j){
+        dist_map[0][j] = j;
+    }
+
+    for(int i=0; i<=word2.size(); ++i){
+        dist_map[i][0] = i;
+    }
+    
+    for(int i=1; i<=word2.size(); ++i){
+        for(int j=1; j<=word1.size(); ++j){
+            if(word2[i-1] == word1[j-1]){
+                dist_map[i][j] = dist_map[i-1][j-1];
+            } else {
+                dist_map[i][j] = 1+getMin(dist_map[i-1][j],
+                                   dist_map[i][j-1],dist_map[i-1][j-1]);
+            }
+        }    
+    }
+    
+    //for(int i=0; i<=word2.size(); ++i){
+    //    for(int j=0; j<=word1.size(); ++j){
+    //        std::cout<<dist_map[i][j];
+    //    }
+    //    std::cout<<std::endl;
+    //}    
+    
+    return dist_map.back().back();
+    
+  }
+};
+```
