@@ -88,3 +88,90 @@ public:
 };
 ```
 
+```
+//Dynamic programming, use 2D array to save metadata
+
+typedef unsigned int uint;
+class Solution {
+private:
+
+    std::string removeDuplicateStar(const std::string & p){
+        if(p.size()==0) return p;
+        
+        std::string ret;
+        for(unsigned int i=0; i<p.size()-1;++i){
+            if(p[i]=='*' && p[i+1]=='*'){
+                continue;
+            }
+            ret+=p[i];
+        }
+        
+        ret+=p[p.size()-1];
+        return ret;
+    }
+
+	void print(const vector< vector<bool> > & match_map){
+		//match_map[s][p]
+		for(uint s=0; s<match_map.size(); s++){
+			for(uint p=0; p<match_map[s].size(); p++){
+				std::cout<<match_map[s][p];
+			}
+			std::cout<<std::endl;
+		}
+		std::cout<<std::endl;
+	}
+
+public:
+    bool isMatch(string s, string p) {
+        p = removeDuplicateStar(p);
+        if(s==p) return true;
+        if(!s.empty()&&p.empty()) return false;
+        if(s.empty()&&(p=="*")) return true;
+        if(s.empty()&&(!p.empty() && p!="*")) return false;
+        
+		//std::cout<<"p:"<<p<<std::endl;
+		//std::cout<<"s:"<<s<<std::endl;
+        
+        vector<bool> v(p.size()+1,false);
+        vector< vector<bool> > match_map(s.size()+1,v);
+        
+		//1.s_i = s.size() or 0, p_i = p.size() or 0
+		match_map.back().back() = true;
+		
+		//2.p_i = p.size(), s remaining, must be false
+		//Already set to false
+		
+		//3.s_i = s.size(), if p_i = '*' and p_i+1 = true, p[p_i] = true
+		for(uint i=p.size()-1; i>0; i--){
+			if(match_map[s.size()][i+1] && p[i]=='*'){
+				match_map[s.size()][i] = true;
+			} else {
+				match_map[s.size()][i] = false;
+			}
+		}
+		
+		//print(match_map);
+		//system("pause");
+
+		for(int s_i=s.size()-1; s_i>=0;s_i--){
+			for(int p_i=p.size()-1; p_i>=0; p_i--){
+				if(s[s_i]==p[p_i] || p[p_i]=='?'){
+					match_map[s_i][p_i] = match_map[s_i+1][p_i+1];
+					continue;
+				}
+
+				if(p[p_i] == '*'){
+					match_map[s_i][p_i] = match_map[s_i+1][p_i+1] || match_map[s_i][p_i+1] || match_map[s_i+1][p_i];
+					continue;
+				}
+				
+				match_map[s_i][p_i] = false;
+			}
+		}
+
+		//print(match_map);
+		return match_map.front().front();
+    }
+};
+```
+
