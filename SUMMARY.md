@@ -118,4 +118,5 @@
   * [Trapping Rain Water](suan-6cd53a-qian-hou-xiang-bian-li/trapping-rain-water.md)
 * [算法:图](suan-6cd53a-tu.md)
   * [Friend Circles](suan-6cd53a-tu/friend-circles.md)
+  * [Number of Islands](suan-6cd53a-tu/number-of-islands.md)
 
