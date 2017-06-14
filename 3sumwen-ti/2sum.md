@@ -1,6 +1,8 @@
 ### 2 Sum
 Given an array of integers, find two numbers such that they add up to a specific target number.
+
 http://www.lintcode.com/en/problem/two-sum/
+https://leetcode.com/problems/two-sum/#/description
 
 ```
 //Hash Map Solution
