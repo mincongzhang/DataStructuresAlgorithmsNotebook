@@ -124,16 +124,18 @@ private:
 public:
     bool isMatch(string s, string p) {
         p = removeDuplicateStar(p);
-        if(s==p) return true;
-        if(!s.empty()&&p.empty()) return false;
-        if(s.empty()&&(p=="*")) return true;
-        if(s.empty()&&(!p.empty() && p!="*")) return false;
         
-		//std::cout<<"p:"<<p<<std::endl;
-		//std::cout<<"s:"<<s<<std::endl;
+        //NOTE: all can be dealt by checking s_i/p_i < 0
+        //if(s==p) return true;
+        //if(!s.empty()&&p.empty()) return false;
+        //if(s.empty()&&(!p.empty() && p!="*")) return false;
         
         vector<bool> v(p.size()+1,false);
         vector< vector<bool> > match_map(s.size()+1,v);
+        
+        ///////////////
+        /*edge cases*/
+        ///////////////
         
 		//1.s_i = s.size() or 0, p_i = p.size() or 0
 		match_map.back().back() = true;
@@ -141,8 +143,10 @@ public:
 		//2.p_i = p.size(), s remaining, must be false
 		//Already set to false
 		
-		//3.s_i = s.size(), if p_i = '*' and p_i+1 = true, p[p_i] = true
-		for(uint i=p.size()-1; i>0; i--){
+		//3.s_i = s.size(), if p_i+1 = true and p_i = '*', p[p_i] = true
+		for(int i=p.size()-1; i>=0; i--){
+		    if(i<0) continue;//in case size()==0
+		    
 			if(match_map[s.size()][i+1] && p[i]=='*'){
 				match_map[s.size()][i] = true;
 			} else {
@@ -151,10 +155,15 @@ public:
 		}
 		
 		//print(match_map);
-		//system("pause");
 
+        ////////////////
+        /*Fill the map*/
+        ////////////////
+        
 		for(int s_i=s.size()-1; s_i>=0;s_i--){
 			for(int p_i=p.size()-1; p_i>=0; p_i--){
+			    if(s_i<0 || p_i<0) continue;//NOTE:in case size()==0
+			    
 				if(s[s_i]==p[p_i] || p[p_i]=='?'){
 					match_map[s_i][p_i] = match_map[s_i+1][p_i+1];
 					continue;
