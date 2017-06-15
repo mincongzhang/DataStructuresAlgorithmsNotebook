@@ -57,5 +57,4 @@ public:
     return result;
   }
 };
-
 ```
