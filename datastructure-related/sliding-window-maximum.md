@@ -18,6 +18,10 @@ Window position                Max
 
 Therefore, return the max sliding window as [3,3,5,5,6,7].
 
+https://leetcode.com/problems/sliding-window-maximum/#/description
+
+https://discuss.leetcode.com/topic/35823/recommend-for-beginners-clean-c-implementation-with-detailed-explanation/2
+
 
 ```
 //Multiset, O(nlog(k))
@@ -29,7 +33,7 @@ public:
   vector<int> maxSlidingWindow(vector<int>& nums, int k) {
     vector<int> result;
     if(nums.size()<k) return result;
-    if(k==0) return result;
+    if(k<=0) return result;
 
     std::multiset<int> mset;
     unsigned int begin = 0;
