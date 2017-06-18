@@ -62,3 +62,33 @@ public:
   }
 };
 ```
+
+```
+class Solution {
+public:
+    vector<int> maxSlidingWindow(vector<int>& nums, int k) {
+        vector<int> result;
+        deque<int> q;
+        for(int i=0; i<nums.size(); i++){
+            std::cout<<"i:"<<i<<std::endl;
+            /*** remove the front element **/
+            if(!q.empty() && q.front()==i-k){
+                //std::cout<<"remove front:"<<q.front()<<std::endl;
+                q.pop_front();
+            }
+            
+            /*** keep the element in the queue is monotically-decreasing ***/
+            while(!q.empty() && nums[q.back()] < nums[i]){
+                //std::cout<<"nums[q.back()]:"<<nums[q.back()]<<",nums[i]:"<<nums[i]<<",remove back:"<<q.back()<<std::endl;
+                q.pop_back();
+            }
+            q.push_back(i);
+            
+            if(i>=k-1){
+                result.push_back(nums[q.front()]);
+            }
+        }
+        return result;
+    }
+};
+```
