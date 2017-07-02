@@ -26,12 +26,7 @@ int decimalZip(int A, int B){
     
 }
 
-int main()
-{
-  std::string name;
-  std::cout << "What is your name? ";
-  getline (std::cin, name);
-  std::cout << "Hello, " << name << "!\n";
+int main(){
 }
 
 ```
