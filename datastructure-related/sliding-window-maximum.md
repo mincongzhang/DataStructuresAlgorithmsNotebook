@@ -65,6 +65,44 @@ public:
 ```
 
 ```
+//priority_queue nlog(n)
+
+#include <queue>
+#include <utility>
+
+class Solution {
+public:
+    vector<int> maxSlidingWindow(vector<int>& nums, int k) {
+        vector<int> result;
+        if(k>nums.size()||nums.empty()) return result; 
+        
+        int begin(0), end(k-1);
+        std::priority_queue<std::pair<int,int> > p_q;
+        for(int i=begin;i<=end;++i){
+            p_q.push(std::pair<int,int>(nums[i],i));
+        }
+        result.push_back(p_q.top().first);
+        begin++;
+        end++;
+        
+        while(end<nums.size()){
+            p_q.push(std::pair<int,int>(nums[end],end));
+            
+            while(p_q.top().second<begin || p_q.top().second>end){
+                p_q.pop();
+            }
+            
+            result.push_back(p_q.top().first);
+            begin++;
+            end++;
+        }
+        
+        return result;
+    }
+};
+```
+
+```
 class Solution {
 public:
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
