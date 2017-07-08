@@ -32,6 +32,7 @@
   * [Sliding Window Maximum](datastructure-related/sliding-window-maximum.md)
   * [Largest Rectangle in Histogram](datastructure-related/largest-rectangle-in-histogram.md)
   * [Decimal Zip](datastructure-related/decimal-zip.md)
+  * [Group Anagrams](datastructure-related/group-anagrams.md)
 * [算法:二叉搜索\(完成\)](binary-search.md)
   * [First Position of Target](binary-search/first-position-of-target.md)
   * [Search Insert Position](binary-search/search-insert-position.md)
