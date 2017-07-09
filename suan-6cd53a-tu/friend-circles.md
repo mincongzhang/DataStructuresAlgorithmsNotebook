@@ -60,6 +60,47 @@ public:
 ```
 
 ```
+namespace{
+typedef unsigned int uint;
+}
+
+class Solution {
+private:
+    bool search(vector<vector<int>> & M,uint i, vector<bool> & visited){
+        
+        if(visited[i]) return false;
+        
+        int count = 0;
+        for(uint j=0; j<M[i].size();++j){
+            if(M[i][j]>0){
+                M[i][j] = 0;
+                M[j][i] = 0;
+                search(M,j, visited);
+                count++;
+            }
+        }
+
+        visited[i] = true;
+        return count>0;
+    }
+    
+
+public:
+    int findCircleNum(vector<vector<int>>& M) {
+
+        int count = 0;
+        vector<bool> visited(M.size(), false);
+        
+        for(uint i=0; i<M.size(); ++i){
+            if(search(M,i, visited)){ count++; }
+        }
+        
+        return count;
+    }
+};
+```
+
+```
 /*
  * Complete the function below.
  */
