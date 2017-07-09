@@ -26,7 +26,7 @@
   * [Data Stream Median](datastructure-related/data-stream-median.md)
   * [Merge k Sorted Lists](datastructure-related/merge-k-sorted-lists.md)
   * [Kth Largest Element in an Array](datastructure-related/kth-largest-element-in-an-array.md)
-  * [Valid Parentheses](datastructure-related/valid-parentheses.md)
+  * [Valid Parentheses \(Braces\)](datastructure-related/valid-parentheses.md)
   * [Evaluate Reverse Polish Notation](datastructure-related/evaluate-reverse-polish-notation.md)
   * [Encode and Decode TinyURL](datastructure-related/encode-and-decode-tinyurl.md)
   * [Sliding Window Maximum](datastructure-related/sliding-window-maximum.md)
