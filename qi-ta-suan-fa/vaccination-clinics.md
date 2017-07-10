@@ -4,8 +4,8 @@ The world health organization wants to establish a total of B vaccination clinic
 
 1.       2 cities and
 2.       7 clinics to be opened
-3.       200.000 is the population of first city
-4.       50,000 is the population of second city
+3.       200,000 is the population of first city
+4.       500,000 is the population of second city
 5.       Two clinics can open in the first city and
 6.       Five in the second. This way
 7.       100,000 people can be immunized in each of the two clinics in first city, and
