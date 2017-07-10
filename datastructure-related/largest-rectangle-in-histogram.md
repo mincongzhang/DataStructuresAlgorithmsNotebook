@@ -87,5 +87,22 @@ public:
 };
 ```
 
+```
+//output example
 
+push:0, value:2
+height:2, left: left, area:2
+push:1, value:1
+push:2, value:5
+push:3, value:6
+height:6, left:5, area:6
+height:5, left:1, area:10
+push:4, value:2
+push:5, value:3
+height:3, left:2, area:3
+height:2, left:1, area:8
+height:1, left: left, area:6
+push:6, value:0
+10
 
+```
