@@ -82,6 +82,7 @@
   * [Reverse String](suan-6cd53a-two-pointers/reverse-string.md)
   * [Remove Duplicates from Sorted Array](suan-6cd53a-two-pointers/remove-duplicates-from-sorted-array.md)
   * [Container With Most Water](suan-6cd53a-two-pointers/container-with-most-water.md)
+  * [Longest Subarray](suan-6cd53a-two-pointers/longest-subarray.md)
 * [算法:数组相关算法\(完成\)](suan-6cd53a-shu-zu-xiang-guan-suan-fa.md)
   * [Subarray Sum](suan-6cd53a-shu-zu-xiang-guan-suan-fa/subarray-sum.md)
   * [Product of Array Exclude Itself](suan-6cd53a-shu-zu-xiang-guan-suan-fa/product-of-array-exclude-itself.md)
