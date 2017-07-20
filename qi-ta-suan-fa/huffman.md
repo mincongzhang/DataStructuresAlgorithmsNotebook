@@ -5,7 +5,7 @@
 ![](/assets/huffman.png)
 
 ```
-//Hash table
+//Hash table/map
 
 #include <iostream>
 #include <string>
