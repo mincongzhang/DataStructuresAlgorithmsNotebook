@@ -4,3 +4,7 @@
 
 ![](/assets/huffman.png)
 
+```
+//Hash table
+
+```
