@@ -218,6 +218,18 @@ int main(){
   q2.pop();
   std::cout<<"priority_queue top after pop:"<<q2.top()<<std::endl;
 
+  std::priority_queue<std::pair<int,std::string> > p_q;
+  p_q.push(std::pair<int,std::string>(1,"1"));
+  p_q.push(std::pair<int,std::string>(2,"2"));
+  p_q.push(std::pair<int,std::string>(3,"3"));
+  p_q.push(std::pair<int,std::string>(4,"4"));
+
+  while(!p_q.empty()){
+    std::cout<<p_q.top().first<<","<<p_q.top().second<<std::endl;
+    p_q.pop();
+  }
+
+
 }
 ```
 
