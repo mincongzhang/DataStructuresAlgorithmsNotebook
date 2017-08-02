@@ -18,7 +18,7 @@ public:
         //[1,1,1,2]
         int non_dup_it = 1;
         for(int i=1; i<nums.size(); ++i){
-            if(nums[i]!=nums[i-1]){
+            if(nums[i]!=nums[i-1]){//should stay
                 nums[non_dup_it] = nums[i];
                 non_dup_it++;
             }
