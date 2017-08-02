@@ -23,19 +23,22 @@ public:
                 count++;
             }
         }
-        
+
         return count;
     }
 };
 ```
 
-总结:遇到这种需要in place移动的题,一般就是一个move_it,加上for循环
+总结:遇到这种需要in place移动的题,一般就是一个move\_it,加上for循环
 
 ```
 for(it=0:size){
-    if(should move elem){
+    if(should stay){
         swap(it,move_it);
         move_it++;
     }
 }
 ```
+
+
+
