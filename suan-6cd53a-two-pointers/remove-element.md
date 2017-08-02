@@ -32,8 +32,9 @@ public:
 总结:遇到这种需要in place移动的题,一般就是一个move\_it,加上for循环
 
 ```
+move_it=0;
 for(it=0:size){
-    if(should stay){
+    if(num[it] should stay){
         swap(it,move_it);
         move_it++;
     }
