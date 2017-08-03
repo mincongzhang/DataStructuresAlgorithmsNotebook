@@ -16,6 +16,5 @@ Input: "cbbd"
 Output: "bb"
 ```
 
-```
-
-```
+Solution:
+Reverse the string and check longest common substring 
