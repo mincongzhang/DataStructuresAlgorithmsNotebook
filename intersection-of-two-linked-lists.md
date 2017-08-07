@@ -54,7 +54,7 @@ public:
             s_b.pop();
         }
         
-        return NULL;
+        return first_eq;
     }
 };
 
