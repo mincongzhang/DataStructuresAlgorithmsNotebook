@@ -28,7 +28,7 @@ Solution 2
 1.Save to stack
 2.pop from stack and check last equal node
 
-套路:凡是遇到需要相反操作的, 都可以往stack想想
+套路:凡是遇到需要反向操作的, 都可以往stack想想
 (凡是遇到随机,都可以往hash想想)
 (凡是需要有序,都可以往二叉搜索想想)
 
