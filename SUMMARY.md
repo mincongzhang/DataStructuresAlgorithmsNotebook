@@ -72,6 +72,7 @@
   * [Reorder List](reorder-list.md)
   * [Convert Sorted List to Balanced BST](convert-sorted-list-to-balanced-bst.md)
   * [Copy List with Random Pointer](copy-list-with-random-pointer.md)
+  * [Intersection of Two Linked Lists](intersection-of-two-linked-lists.md)
 * [算法:链表里的二分和排序\(完成\)](suan-6cd53a-lian-biao-li-de-er-fen-he-pai-xu.md)
   * [Merge Two Sorted Lists](suan-6cd53a-lian-biao-li-de-er-fen-he-pai-xu/merge-two-sorted-lists.md)
   * [Partition List](suan-6cd53a-lian-biao-li-de-er-fen-he-pai-xu/partition-list.md)
