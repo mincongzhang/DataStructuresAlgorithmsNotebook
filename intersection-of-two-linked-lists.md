@@ -17,6 +17,17 @@ begin to intersect at node c1.
 https://leetcode.com/problems/intersection-of-two-linked-lists/description/
 
 ```
+Solution 1
+1.get size of A, B
+2.Check diff, then move A/B with diff node nums
+3.Loop together and find the first same node
+```
+
+```
+Solution 2
+1.Save to stack
+2.pop from stack and check last equal node
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -42,19 +53,19 @@ public:
             it_b = it_b->next;
         }
         
-        ListNode * first_eq = NULL;
+        ListNode * last_eq = NULL;
         while(!s_a.empty() && !s_b.empty()){
             if(s_a.top()==s_b.top()){
-                first_eq = s_a.top();
+                last_eq = s_a.top();
             } else {
-                return first_eq;
+                return last_eq;
             }
             
             s_a.pop();
             s_b.pop();
         }
         
-        return first_eq;
+        return last_eq;
     }
 };
 
