@@ -123,6 +123,7 @@
   * [Top K](qi-ta-suan-fa/top-k.md)
   * [Vaccination Clinics ](qi-ta-suan-fa/vaccination-clinics.md)
   * [Huffman](qi-ta-suan-fa/huffman.md)
+  * [Lexicographical Numbers](qi-ta-suan-fa/lexicographical-numbers.md)
 * [算法:前后向遍历](suan-6cd53a-qian-hou-xiang-bian-li.md)
   * [Trapping Rain Water](suan-6cd53a-qian-hou-xiang-bian-li/trapping-rain-water.md)
 * [算法:图](suan-6cd53a-tu.md)
