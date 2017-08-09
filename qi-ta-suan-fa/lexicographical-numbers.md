@@ -10,6 +10,7 @@ Please optimize your algorithm to use less time and space. The input size may be
 https://leetcode.com/problems/lexicographical-numbers/description/
 
 ```
+//Recursive
 class Solution {
 private:
     void generate(int i, const int n, vector<int> & result){
@@ -41,6 +42,7 @@ public:
 ```
 
 ```
+//convert to string, sort and convert back
 class Solution {
 public:
     vector<int> lexicalOrder(int n) {
@@ -60,6 +62,7 @@ public:
 ```
 
 ```
+//define operator <
 struct Lex {
     int val;
     Lex(int i):val(i){}
