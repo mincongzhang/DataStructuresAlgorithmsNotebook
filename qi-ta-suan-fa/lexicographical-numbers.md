@@ -11,6 +11,37 @@ https://leetcode.com/problems/lexicographical-numbers/description/
 
 ```
 class Solution {
+private:
+    void generate(int i, const int n, vector<int> & result){
+        if(i>n) return;
+        result.push_back(i);
+        i*=10;
+        
+        generate(i,n,result);
+        for(int j=1; j<=9; j++){
+            int tmp = i+j;
+            if(tmp<=n){
+                generate(tmp,n,result);
+            } else {
+                return;
+            }
+        }
+    }
+public:
+    vector<int> lexicalOrder(int n) {
+        vector<int> result;
+
+        for(int i=1; i<=9; ++i){
+            generate(i,n,result);
+        }
+        
+        return result;
+    }
+};
+```
+
+```
+class Solution {
 public:
     vector<int> lexicalOrder(int n) {
         std::set<std::string> s;
