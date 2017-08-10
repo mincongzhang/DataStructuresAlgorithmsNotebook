@@ -129,7 +129,7 @@
   * [Valid Parentheses \(Braces\)](datastructure-related/valid-parentheses.md)
   * [Evaluate Reverse Polish Notation](datastructure-related/evaluate-reverse-polish-notation.md)
   * [Min Stack](datastructure-related/min-stack.md)
+  * [Sliding Window Maximum](datastructure-related/sliding-window-maximum.md)
   * Trapping Rain Water
   * [Largest Rectangle in Histogram](datastructure-related/largest-rectangle-in-histogram.md)
-  * [Sliding Window Maximum](datastructure-related/sliding-window-maximum.md)
 
