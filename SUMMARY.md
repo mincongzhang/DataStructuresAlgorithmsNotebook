@@ -122,7 +122,6 @@
 * [算法:图](suan-6cd53a-tu.md)
   * [Friend Circles](suan-6cd53a-tu/friend-circles.md)
   * [Number of Islands](suan-6cd53a-tu/number-of-islands.md)
-* [套路](tao-lu.md)
 * [算法: 使用Stack](suan-6cd53a-shi-yong-stack.md)
   * [Decimal Zip](datastructure-related/decimal-zip.md)
   * [Implement Queue by Two Stacks](datastructure-related/implement-queue-by-two-stacks.md)
@@ -132,4 +131,5 @@
   * [Sliding Window Maximum](datastructure-related/sliding-window-maximum.md)
   * Trapping Rain Water
   * [Largest Rectangle in Histogram](datastructure-related/largest-rectangle-in-histogram.md)
+* [套路](tao-lu.md)
 
