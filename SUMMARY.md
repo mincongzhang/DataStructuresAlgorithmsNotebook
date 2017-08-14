@@ -53,6 +53,7 @@
   * [Maximum Product Subarray](greedy-algorithm/maximum-product-subarray.md)
 * [算法:3Sum问题\(完成\)](3sumwen-ti.md)
   * [2Sum](3sumwen-ti/2sum.md)
+  * [2Sum Duplicates](3sumwen-ti/2sum-duplicates.md)
   * [3Sum](3sumwen-ti/3sum.md)
   * [3Sum Closest](3sumwen-ti/3sum-closest.md)
 * [算法:链表相关算法\(完成\)](suan-6cd53a-lian-biao-xiang-guan-suan-fa.md)
