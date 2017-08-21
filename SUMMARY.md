@@ -137,4 +137,6 @@
   * [Merge Intervals](qi-ta-suan-fa/merge-intervals.md)
   * [PowerOf10](qi-ta-suan-fa/powerof10.md)
 * [套路](tao-lu.md)
+* [Water/Histogram相关](waterhistogramxiang-guan.md)
+  * [Trapping Rain Water](waterhistogramxiang-guan/trapping-rain-water.md)
 
