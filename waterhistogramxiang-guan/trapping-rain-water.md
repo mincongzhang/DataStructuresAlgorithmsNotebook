@@ -43,3 +43,29 @@ public:
     }
 };
 ```
+
+```
+//Dynamic programming
+class Solution {
+public:
+    int trap(vector<int>& height) {
+        vector<int> left_max  = height;
+        vector<int> right_max = height;
+        
+        for(int i=1;i<left_max.size();++i){
+            left_max[i] = std::max(left_max[i-1],left_max[i]);
+        }
+        
+        for(int i=right_max.size()-2; i>=0; --i){
+            right_max[i] = std::max(right_max[i+1],right_max[i]);
+        }
+        
+        int count=0;
+        for(int i=0; i<height.size(); ++i){
+            count+=std::min(right_max[i],left_max[i])-height[i];
+        }
+        
+        return count;
+    }
+};
+```
