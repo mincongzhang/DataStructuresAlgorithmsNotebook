@@ -119,7 +119,6 @@
   * [Evaluate Reverse Polish Notation](datastructure-related/evaluate-reverse-polish-notation.md)
   * [Min Stack](datastructure-related/min-stack.md)
   * [Sliding Window Maximum](datastructure-related/sliding-window-maximum.md)
-  * Trapping Rain Water
   * [Largest Rectangle in Histogram](datastructure-related/largest-rectangle-in-histogram.md)
 * 算法: 二叉树相关
   * [Populating Next Right Pointers in Each Node II](populating-next-right-pointers-in-each-node-ii.md)
@@ -140,4 +139,5 @@
 * [Water/Histogram相关](waterhistogramxiang-guan.md)
   * [Trapping Rain Water](waterhistogramxiang-guan/trapping-rain-water.md)
   * [Container With Most Water](waterhistogramxiang-guan/container-with-most-water.md)
+  * [Largest Rectangle in Histogram](waterhistogramxiang-guan/largest-rectangle-in-histogram.md)
 
