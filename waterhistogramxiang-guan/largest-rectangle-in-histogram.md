@@ -3,6 +3,7 @@
 Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, find the area of largest rectangle in the histogram.
 
 [http://www.lintcode.com/en/problem/largest-rectangle-in-histogram/](http://www.lintcode.com/en/problem/largest-rectangle-in-histogram/)
+https://leetcode.com/problems/largest-rectangle-in-histogram/description/
 
 ```
 //brute force
