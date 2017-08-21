@@ -5,6 +5,8 @@ Given n non-negative integers representing the histogram's bar height where the 
 [http://www.lintcode.com/en/problem/largest-rectangle-in-histogram/](http://www.lintcode.com/en/problem/largest-rectangle-in-histogram/)
 https://leetcode.com/problems/largest-rectangle-in-histogram/description/
 
+https://leetcode.com/problems/largest-rectangle-in-histogram/solution/#approach-4-better-divide-and-conquer-accepted
+
 ```
 //brute force
 
