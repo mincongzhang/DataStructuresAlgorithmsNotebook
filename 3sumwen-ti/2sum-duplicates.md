@@ -26,7 +26,7 @@ int NumPairs( int x[], int size, int K)
 			continue;
 		}
 		if(hash[K-x[i]]>0){
-			count++;
+			count+=hash[K-x[i]];
 		}
 	}
 	count+=same_count;
@@ -43,6 +43,7 @@ int main()
 	int d[3] = {1,1,1}; //pairs = 3
 	int e[4] = {0,0,0,0}; //pairs = 6
 	int f[5] = {0,0,1,-1,0};
+	int g[5] = {2,2,2,1};
 
 	assert(NumPairs( a, sizeof(a)/sizeof(int), 10 ) == 0);
 	assert(NumPairs( b, sizeof(b)/sizeof(int), 0 ) == 1);
@@ -50,6 +51,7 @@ int main()
 	assert(NumPairs( d, sizeof(d)/sizeof(int), 2 ) == 3);
 	assert(NumPairs( e, sizeof(e)/sizeof(int), 0 ) == 6);
 	assert(NumPairs( f, sizeof(f)/sizeof(int), 0 ) == 4);
+	assert(NumPairs( g, sizeof(g)/sizeof(int), 3 ) == 3);
 }
 ```
 
