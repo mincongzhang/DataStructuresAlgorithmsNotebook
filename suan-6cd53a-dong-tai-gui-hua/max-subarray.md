@@ -9,7 +9,7 @@ Given an array of integers, find a contiguous subarray which has the largest sum
 
 //Solution2 O(nlogn)
 //Binary search, the max is either included in the middle or not, 
-//get mid, search left, and search right, update max
+//get mid, search left, and search right, update max, and recursive get it done
 
 //Solution3 O(n) DP
 //update local max and global max at the same time
