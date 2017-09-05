@@ -8,7 +8,8 @@ Given an array of integers, find a contiguous subarray which has the largest sum
 //For every element, go forward and find max, update global max
 
 //Solution2 O(nlogn)
-//Binary search, search left, and search right, and recursively solve the problem
+//Binary search, the max is either included in the middle or not, 
+//get mid, search left, and search right, update max
 
 //Solution3 O(n) DP
 //update local max and global max at the same time
