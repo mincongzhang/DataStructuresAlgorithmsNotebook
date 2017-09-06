@@ -2,6 +2,7 @@
 
 Given an array of integers, find a contiguous subarray which has the largest sum.  
 [http://www.lintcode.com/en/problem/maximum-subarray/](http://www.lintcode.com/en/problem/maximum-subarray/)
+https://leetcode.com/problems/maximum-subarray/description/
 
 ```
 //Solution1 O(n^2)
