@@ -12,6 +12,42 @@ https://leetcode.com/problems/maximum-subarray/description/
 //Binary search, the max is either included in the middle or not, 
 //get mid, search left, and search right, update max, and recursive get it done
 
+```
+class Solution {
+private:
+    int maxSubArray(const vector<int>& nums, int l, int r){
+        if(l>r) return INT_MIN;
+        if(l==r) return nums[l];
+        
+        int m = (l+r)/2;
+        int l_sub_max = maxSubArray(nums,l,m);
+        int r_sub_max = maxSubArray(nums,m+1,r);
+        
+        int l_mid_max = nums[m];
+        int l_mid_sum = 0;
+        for(int i=m; i>=l;i--){
+            l_mid_sum+=nums[i];
+            l_mid_max = std::max(l_mid_max,l_mid_sum);
+        }
+        
+        int r_mid_max = nums[m+1];
+        int r_mid_sum = 0;
+        for(int i=m+1; i<=r; ++i){
+            r_mid_sum+=nums[i];
+            r_mid_max = std::max(r_mid_max,r_mid_sum);
+        }
+        
+        int cur_max = r_mid_max+l_mid_max;
+        return max(max(l_sub_max,r_sub_max),cur_max);
+    }
+    
+public:
+    int maxSubArray(vector<int>& nums) {
+        return maxSubArray(nums,0,nums.size()-1);
+    }
+};
+```
+
 //Solution3 O(n) DP
 //update local max and global max at the same time
 maxSubArray(A, i) = A[i] + maxSubArray(A, i - 1) > 0 ? maxSubArray(A, i - 1) : 0; 
