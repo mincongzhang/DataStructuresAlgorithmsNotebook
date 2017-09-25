@@ -79,5 +79,49 @@ public:
 };
 ```
 
+```
+class Solution {
+private:
+    unordered_set<int> uniq_hash;
+    void findThreeSum(const vector<int>& nums, int start, vector<vector<int>> & result){
+        if(start == nums.size()-1) return;
+                
+        int num1 = nums[start];
 
+        unordered_set<int> hash;
+        for(int i=start+1; i<nums.size(); ++i){
+            int num2 = nums[i];
+            int num3 = -(num1+num2);
+            if(hash.find(num3)!=hash.end()){
+                vector<int> v;
+                v.push_back(num1);
+                if(num2<num3){
+                    v.push_back(num2);
+                    v.push_back(num3);
+                } else {
+                    v.push_back(num3);
+                    v.push_back(num2);
+                }
+                int id = v[0]*19+v[1]*11+v[2]*2;
+                if(uniq_hash.find(id)==uniq_hash.end()){
+                    result.push_back(v);
+                    uniq_hash.insert(id);
+                }
+            }
+            hash.insert(nums[i]);
+        }
+    }
+public:
+    vector<vector<int>> threeSum(vector<int>& nums) {
+        sort(nums.begin(),nums.end());
+        
+        vector<vector<int>> result;
+        for(int i=0;i<nums.size();++i){
+            findThreeSum(nums,i,result);
+        }
+        
+        return result;
+    }
+};
+```
 
