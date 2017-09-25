@@ -85,7 +85,7 @@ private:
     unordered_set<int> uniq_hash;
     void findThreeSum(const vector<int>& nums, int start, vector<vector<int>> & result){
         if(start == nums.size()-1) return;
-                
+
         int num1 = nums[start];
 
         unordered_set<int> hash;
@@ -114,14 +114,16 @@ private:
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
         sort(nums.begin(),nums.end());
-        
+
         vector<vector<int>> result;
         for(int i=0;i<nums.size();++i){
             findThreeSum(nums,i,result);
         }
-        
+
         return result;
     }
 };
 ```
+
+
 
