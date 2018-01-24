@@ -11,6 +11,7 @@ https://leetcode.com/problems/maximum-subarray/description/
 //Solution2 O(nlogn)
 //Binary search, the max is either included in the middle or not, 
 //get mid, search left, and search right, update max, and recursive get it done
+```
 
 ```
 class Solution {
@@ -48,6 +49,7 @@ public:
 };
 ```
 
+```
 //Solution3 O(n) DP
 //update local max and global max at the same time
 maxSubArray(A, i) = A[i] + maxSubArray(A, i - 1) > 0 ? maxSubArray(A, i - 1) : 0; 
