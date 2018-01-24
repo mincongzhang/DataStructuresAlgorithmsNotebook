@@ -1,8 +1,8 @@
 ### Maximum Subarray
 
 Given an array of integers, find a contiguous subarray which has the largest sum.  
-[http://www.lintcode.com/en/problem/maximum-subarray/](http://www.lintcode.com/en/problem/maximum-subarray/)
-https://leetcode.com/problems/maximum-subarray/description/
+[http://www.lintcode.com/en/problem/maximum-subarray/](http://www.lintcode.com/en/problem/maximum-subarray/)  
+[https://leetcode.com/problems/maximum-subarray/description/](https://leetcode.com/problems/maximum-subarray/description/)
 
 ```
 //Solution1 O(n^2)
@@ -19,29 +19,29 @@ private:
     int maxSubArray(const vector<int>& nums, int l, int r){
         if(l>r) return INT_MIN;
         if(l==r) return nums[l];
-        
+
         int m = (l+r)/2;
         int l_sub_max = maxSubArray(nums,l,m);
         int r_sub_max = maxSubArray(nums,m+1,r);
-        
+
         int l_mid_max = nums[m];
         int l_mid_sum = 0;
         for(int i=m; i>=l;i--){
             l_mid_sum+=nums[i];
             l_mid_max = std::max(l_mid_max,l_mid_sum);
         }
-        
+
         int r_mid_max = nums[m+1];
         int r_mid_sum = 0;
         for(int i=m+1; i<=r; ++i){
             r_mid_sum+=nums[i];
             r_mid_max = std::max(r_mid_max,r_mid_sum);
         }
-        
+
         int cur_max = r_mid_max+l_mid_max;
         return max(max(l_sub_max,r_sub_max),cur_max);
     }
-    
+
 public:
     int maxSubArray(vector<int>& nums) {
         return maxSubArray(nums,0,nums.size()-1);
@@ -49,7 +49,7 @@ public:
 };
 ```
 
-```
+```cpp
 //Solution3 O(n) DP
 //update local max and global max at the same time
 maxSubArray(A, i) = A[i] + maxSubArray(A, i - 1) > 0 ? maxSubArray(A, i - 1) : 0; 
@@ -86,14 +86,14 @@ class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
         if(nums.empty()) return 0;
-        
+
         vector<int> max_v = nums;
         int max = nums[0];
         for(int i=1; i<nums.size();++i){
             max_v[i] = (max_v[i-1]<0? 0 : max_v[i-1]) + nums[i];
             max = std::max(max,max_v[i]);
         }
-        
+
         return max;
     }
 };
@@ -111,7 +111,7 @@ public:
             sum += nums[i];
             max = std::max(max,sum);
         }
-        
+
         return max;
     }
 };
