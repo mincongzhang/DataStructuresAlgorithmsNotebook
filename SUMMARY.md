@@ -48,6 +48,8 @@
   * [Pow\(x, n\)](binary-search/powx-n.md)
   * [Single Element in a Sorted Array](binary-search/single-element-in-a-sorted-array.md)
   * [Median of Two Sorted Array](binary-search/median-of-two-sorted-array.md)
+* 算法: 二叉树相关
+  * [Populating Next Right Pointers in Each Node II](populating-next-right-pointers-in-each-node-ii.md)
 * [算法:链表相关算法](suan-6cd53a-lian-biao-xiang-guan-suan-fa.md)
   * [Remove Nth Node From End of List](remove-nth-node-from-end-of-list.md)
   * [Add Two Numbers II](add-two-numbers-ii.md)
@@ -121,8 +123,6 @@
   * [Min Stack](datastructure-related/min-stack.md)
   * [Sliding Window Maximum](datastructure-related/sliding-window-maximum.md)
   * [Largest Rectangle in Histogram](datastructure-related/largest-rectangle-in-histogram.md)
-* 算法: 二叉树相关
-  * [Populating Next Right Pointers in Each Node II](populating-next-right-pointers-in-each-node-ii.md)
 * [其他算法](qi-ta-suan-fa.md)
   * [MapReduce](qi-ta-suan-fa/mapreduce.md)
   * [Power of Two](qi-ta-suan-fa/power-of-two.md)
